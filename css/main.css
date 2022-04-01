@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Shrik";
+  src: url("../fonts/Shrinkhand-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoL";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoR";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoM";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoB";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+/*# sourceMappingURL=main.css.map */
