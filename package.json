@@ -2,9 +2,9 @@
   "name": "website_project_3",
   "version": "1.0.0",
   "description": "menus de restaurants", 
-  "main": "index.html",
+  "main": "accueil.html",
   "scripts": {
-    "sass": "sass --watch ./sass/normalize.sass:./css/style.css --style compressed"
+    "sass": "sass --watch ./sass/normalize.sass:./css/normalize.css --style compressed"
   },
   "repository": {
     "type": "git",
