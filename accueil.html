@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- liaison de fichiers CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/flexbox.css" />
     <!-- icônes  -->
     <script src="https://kit.fontawesome.com/40409bbb33.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        
+  </head>
+  <body>
+    <header id="header flexCentre">
+      <div><i class="fa fa-arrow-left icnHeader"></i></div>
+      <a href="#"><img class="logo" src="img/logo/ohmyfood.png" alt="logo du site" /></a>
     </header>
     <main>
-        <section>
+      <section class="pg1section1 flexCentre">
+        <div class="partPosition">
+          <div><i class="fa-solid fa-location-dot" id="icnPosition"></i></div>
+          <h3>Paris, Belleville</h3>
+        </div>
+        <div class="entete">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+          <button class="button" type="button" onclick="window.location.href = 'https:';">
+            <span class="textButtonsFilters">Explorer nos restaurants</span>
+          </button>
+        </div>
+      </section>
 
-        </section>
-        <section>
+      <section class="pg1section2">
+        <h3>Fonctionnement</h3>
+        <div class="boxButtonSearch">
+          <div class="search">
+            <span class="btnPosition"
+              ><i class="fa-solid fa-1"></i>
+            </span>
+            <button type="button">
+                <i class="fa-solid fa-mobile-screen"></i><span class="buttonText">Choisissez votre menu</span>
+            </button>
+          </div>
+        </div>
+        <div class="boxButtonSearch">
+          <div class="search">
+            <span class="btnPosition"
+              ><i class="fa-solid fa-2"></i>
+            </span>
+            <button type="button">
+                <i class="fa-solid fa-ellipsis-vertical"></i><i class="fa fa-bars"></i><span class="buttonText">Composez votre menu</span>
+            </button>
+          </div>
+        </div>
+        <div class="boxButtonSearch">
+          <div class="search">
+            <span class="btnPosition"
+              ><i class="fa-solid fa-3"></i>
+            </span>
+            <button type="button">
+                <i class="fa-solid fa-store"></i><span class="buttonText">Dégustez au restaurant</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-        </section>
-        <section>
-
-        </section>
+      <section class="pg1section3"></section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

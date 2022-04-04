@@ -1,0 +1,79 @@
+/* flex-wrap: wrap = autoriser les éléments qui dépassent à aller à la ligne */
+/* justify-content = axe principal */
+/* align-items = axe secondaire ( pour centrer et avoir marges haut bas gauche droite ) */
+
+/* centrer les éléments à l'horizontal, collés entre eux */
+.flexCentre 
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+
+/* éléments à l'horizontal, avec des espaces entre eux, et des espaces à gauche et droite */
+.flexAround 
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+/* éléments à l'horizontal, avec des espaces entre eux, sans espaces à gauche et droite */
+.flexBetween 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+.flexBetweenNoCenter 
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+/* éléments collés au début de la ligne horizontale  */
+.flexStart2 
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+
+.flexStart 
+  display: flex
+  align-content: flex-start
+  flex-wrap: wrap
+
+/* éléments collés à la fin de la ligne horizontale  */
+.flexEnd 
+  display: flex
+  justify-content: flex-end
+  flex-wrap: wrap
+
+.flexColumnCentre 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  flex-wrap: wrap
+
+.flexColumnAround 
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  flex-wrap: wrap
+
+.flexColumnBetween 
+  display: flex
+  flex-wrap: wrap
+
+.flexRow 
+  display: flex
+  flex-direction: row
+
+.flexRowWrap 
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.flexGrow1 
+  display: flex
+  flex: 1
+
+.flexGrow2 
+  display: flex
+  flex: 2
+
