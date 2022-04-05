@@ -20,7 +20,7 @@
       <a href="#"><img class="logo" src="img/logo/ohmyfood.png" alt="logo du site" /></a>
     </header>
     <main>
-      <section class="pg1section1 flexCentre">
+      <section class="page1_part1 flexCentre">
         <div class="partPosition">
           <div><i class="fa-solid fa-location-dot" id="icnPosition"></i></div>
           <h3>Paris, Belleville</h3>
@@ -34,42 +34,129 @@
         </div>
       </section>
 
-      <section class="pg1section2">
+      <section class="page1_part2">
         <h3>Fonctionnement</h3>
         <div class="boxButtonSearch">
           <div class="search">
-            <span class="btnPosition"
-              ><i class="fa-solid fa-1"></i>
-            </span>
-            <button type="button">
-                <i class="fa-solid fa-mobile-screen"></i><span class="buttonText">Choisissez votre menu</span>
+            <button type="button" class="btnPart2">
+              <span class="icnOutBtnBox"><i class="fa-solid fa-1 icnOutBtn"></i> </span>
+              <i class="fa-solid fa-mobile-screen icnInBtn"></i
+              ><span class="buttonText">Choisissez un restaurant</span>
             </button>
           </div>
         </div>
         <div class="boxButtonSearch">
           <div class="search">
-            <span class="btnPosition"
-              ><i class="fa-solid fa-2"></i>
-            </span>
-            <button type="button">
-                <i class="fa-solid fa-ellipsis-vertical"></i><i class="fa fa-bars"></i><span class="buttonText">Composez votre menu</span>
+            <button type="button" class="btnPart2">
+              <span class="icnOutBtnBox"><i class="fa-solid fa-2 icnOutBtn"></i> </span>
+              <span id="icnBurgerBtn"
+                ><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa fa-bars"></i></span
+              ><span class="buttonText">Composez votre menu</span>
             </button>
           </div>
         </div>
         <div class="boxButtonSearch">
           <div class="search">
-            <span class="btnPosition"
-              ><i class="fa-solid fa-3"></i>
-            </span>
-            <button type="button">
-                <i class="fa-solid fa-store"></i><span class="buttonText">Dégustez au restaurant</span>
+            <button type="button" class="btnPart2">
+              <span class="icnOutBtnBox"><i class="fa-solid fa-3 icnOutBtn"></i> </span>
+              <i class="fa-solid fa-store icnInBtn"></i
+              ><span class="buttonText">Dégustez au restaurant</span>
             </button>
           </div>
         </div>
       </section>
 
-      <section class="pg1section3"></section>
+      <section class="page1_part3">
+        <h3>Restaurants</h3>
+        <article class="boxCards flexColumnBetween">
+          <div class="boxCard">
+            <a style="text-decoration: none" href="#">
+              <picture>
+                <img
+                  src="./img/la_palette_du_gout.jpg"
+                  class="imgCards"
+                  alt="photo d'un plat sur une table de restaurant"
+                />
+              </picture>
+              <div class="boxCardText flexRow">
+                <div class="textCard">
+                  <h2>La palette du goût</h2>
+                  <p class="paragCard">Ménilmontant</p>
+                </div>
+                <div class="icnCards">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="boxCard">
+            <a style="text-decoration: none" href="#">
+              <picture>
+                <img
+                  src="./img/la_note_enchantee.jpg"
+                  class="imgCards"
+                  alt="photo d'un plat sur une table de restaurant"
+                />
+              </picture>
+              <div class="boxCardText flexRow">
+                <div class="textCard">
+                  <h2>La note enchantée</h2>
+                  <p class="paragCard">Charonne</p>
+                </div>
+                <div class="icnCards">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="boxCard">
+            <a style="text-decoration: none" href="#">
+              <picture>
+                <img
+                  src="./img/a_la_francaise.jpg"
+                  class="imgCards"
+                  alt="photo d'un plat sur une table de restaurant"
+                />
+              </picture>
+              <div class="boxCardText flexRow">
+                <div class="textCard">
+                  <h2>À la française</h2>
+                  <p class="paragCard">Cité Rouge</p>
+                </div>
+                <div class="icnCards">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="boxCard">
+            <a style="text-decoration: none" href="#">
+              <picture>
+                <img
+                  src="./img/le_delice_des_sens.jpg"
+                  class="imgCards"
+                  alt="photo d'un plat sur une table de restaurant"
+                />
+              </picture>
+              <div class="boxCardText flexRow">
+                <div class="textCard">
+                  <h2>Le délice des sens</h2>
+                  <p class="paragCard">Folie-Méricourt</p>
+                </div>
+                <div class="icnCards">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </article>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="foot">
+        <h3>ohmyfood</h3>
+    </footer>
   </body>
 </html>
