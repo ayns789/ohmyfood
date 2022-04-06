@@ -37,12 +37,16 @@ $grey-light:#F6F6F6
   justify-content: center
   align-items: center
   width: 100%
+  height: 3.1em
   background-color: $grey
-  padding: -1em 0 -1em 0
+  padding: 0
+  margin: 0
   h3
-    font-size: 1.1em
-    padding-left: 1em
+    font-size: 1em
+    margin-top: 1em
     color: #353535
+  #icnPosition
+    margin-right: 1em
 
 .entete
   display: flex
@@ -51,55 +55,54 @@ $grey-light:#F6F6F6
   flex-wrap: wrap
   h1
     margin-top: 1.5em
-    font-size: 1.6em
+    font-size: 1.5em
     width: 70%
     text-align: center
     font-family: "RobotoM"
   p 
     width: 99%
-    margin-top: -0.3em
+    margin-top: -0.2em
     text-align: center
-    font-size:1.2em
+    font-size:1.15em
+    color:#353535
 
 .button
-  height: 3.3em
-  font-size: 1.1em
-  margin: 1em 0 1em 0
-  padding: 0 1.3em 0 1.3em
+  height: 3.1em
+  font-size: 1.05em
+  margin: 0.5em 0 0.5em 0
+  padding: 0 1.3em 0.3em 1.3em
   color: white
   font-weight: semi-bold
   border-radius: 40px
   background: linear-gradient(to bottom right, #FF79DA, #9356DC)
   border: 0em #D0D0D0 solid
   box-shadow: 0 0.4em 0.4em #D0D0D0
+  cursor: pointer
 
 
 //************* PART 2 ****************
 .page1_part2
-  margin: 3em 1.7em 3em 1.7em
+  margin: 2.8em 1.7em 3em 1.7em
   h3
-    font-size: 1.7em
-    font-family: "RobotoB"
-    font-weight: bold
+    font-size: 1.5em
+    font-family: "RobotoM"
+    margin: 0 0 1.2em -0.2em
 
 .boxButtonSearch
   margin: 0 0 1.5em 0.3em
 
 .btnPart2
-  height: 5em
+  height: 4.8em
   margin: 0 0em 0 0em
   width: 100%
   min-width:21em
   background-color: $grey-light
   font-size: 1em
   border: none
-  border-radius: 1em
+  border-radius: 1.5em
   box-shadow: 0 0.2em 0.8em #D0D0D0
+  cursor: pointer
   
-#icnBurgerBtn
-  color: #7E7E7E
-  padding: 0 1.5em 0 1.5em
-
 .icnOutBtnBox
   background-color: #9356DC
   max-height: 20px
@@ -108,13 +111,35 @@ $grey-light:#F6F6F6
   margin: 2px 0 5px -105px
 
 .icnOutBtn
-  width: 0.5em
+  width: 0.45em
   color: white
+  
+
+#icnBurgerBtn
+  color: #7E7E7E
+  padding: 0 1.2em 0 1.2em
+
+.icnBurgerBtn1
+  width: 0.3em
+  height: auto
+  padding-right: 0.08em
+
+.icnBurgerBtn2
+  width: 1.07em
+  height: auto
+  
 
 .icnInBtn
   color: #7E7E7E
-  padding: 0 1.5em 0 1.5em
-  width: 1em
+  padding: 0 1.3em 0 1.3em
+  width: 1em 
+  height: auto
+
+
+.icnInBtn2
+  color: #7E7E7E
+  padding: 0 1.3em 0 1.3em
+  width: 1.4em
   height: auto
 
 .buttonText
@@ -125,45 +150,118 @@ $grey-light:#F6F6F6
 .page1_part3
   background-color: $grey-light
   margin-top: 5em
-  padding-bottom: 4em
+  padding-bottom: 3em
   h3
-    font-size: 1.7em
-    padding: 2em 0 0 1em
-    font-family: "RobotoB"
+    font-size: 1.45em
+    padding: 2.5em 0 0 1em
+    font-family: "RobotoM"
     color: black
     font-weight: bold
 
+.textPicture
+  position: absolute
+  // width: 15%
+  font-size: 0.85em
+  font-weight: bold
+  color: #008563
+  padding: 0.5em 1em 0.5em 1em
+  background-color: #99E2D0
+  top: 5%
+  right: 4%
+  // transform: translate(-50%, -50%)
+
 .boxCard
-  width: calc(100% * (1 / 1) - 20px - 20px)
   height: auto
-  margin: auto
-  margin-bottom: 1.3em
+  margin: auto 
+  margin-bottom: 1.2em
   position: relative
   border-radius: 15px 15px 15px 15px
   background-color: white
   box-shadow: 6px 6px 4px #ededed
+  cursor: pointer
 
 .imgCards 
   border-radius: 15px 15px 0 0
   object-fit: cover
+  object-position: 30% 60%
   width: 100%
-  height: 12em
+  height: 11em
 
 .boxCardText
-  height: 5em
+  height: 4.7em
   width: 100%
   justify-content: space-between
   h2
-    font-size: 1.2em
-    font-family: "RobotoB"
+    font-size: 1.1em
+    font-family: "RobotoM"
     color: black
-    margin: 0.5em 0 0 0.5em
+    margin: 0.6em 0 0 0.7em
   p
-    font-size: 1.2em
-    margin: 0.1em 0 -0.5em 0.5em
+    font-size: 1.1em
+    margin: 0.1em 0 -0.5em 0.7em
   .icnCards
     font-size: 1.5em
-    padding: 0.6em 0.8em 2em 2em
+    width: calc(100% * (1 / 6) - 10px - 10px)
+    padding: 0.6em 0.8em 2.2em 0
+    margin-right: 0.2em
     color: black
 
 
+
+
+
+.imgHead
+  width: 100%
+
+.mainMenus
+  background-color: #F6F6F6
+  position: absolute
+  right: 0%
+  left: 0%
+  top: 32%
+  padding: 0 1em 0 1em
+  padding-bottom: 3em
+  border-radius: 2.5em 2.5em 0 0
+  h3
+    font-size: 1em
+    font-family: 'RobotoL'
+    // border-bottom: solid 2px 
+
+.titrePage
+  margin-height: 2em 
+  h1
+    font-family: 'Shrik'
+
+.page-title:after 
+    content: "" 
+    display: block
+    margin: 0 0 0 0
+    width: 2.5em
+    padding-top: 6px
+    border-bottom: 3px solid #99E2D0
+
+.cardsMenu
+  width: 100%
+  height: 4.5em
+  margin-bottom: 1em
+  .textCard
+    margin: 0
+    padding: 0
+    h2
+      font-size: 1.15em
+      font-family: "RobotoR"
+      color: black
+      margin: 0.6em 0 0 0.7em
+    p
+      font-size: 0.95em
+      margin: 0.2em 0 0 0.7em
+      width: 105%
+      color: black
+  .cardsMenuTarifs
+    font-size: 0.7em
+    font-family: 'RobotoM'
+    padding: 1.2em 0 0 0
+    margin-right: 0.1em
+
+.box1, .box2, .box3
+  padding-bottom: 0.5em

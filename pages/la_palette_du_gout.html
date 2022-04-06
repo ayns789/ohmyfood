@@ -5,8 +5,172 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- liaison de fichiers CSS -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/flexbox.css" />
+    <!-- icônes  -->
+    <script src="https://kit.fontawesome.com/40409bbb33.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header id="header">
+        <a href="#"><i class="fa fa-arrow-left icnHeader"></i></a>
+        <a href="#"
+          ><img class="logo flexCentre" src="../img/logo/ohmyfood.png" alt="logo du site"
+        /></a>
+      </header>
+  
+      <main>
+        <img
+          src="../img/la_palette_du_gout.jpg"
+          class="imgHead"
+          alt="photo d'un plat sur une table de restaurant"
+        />
+        <section class="mainMenus">
+          <div class="flexBetween">
+            <h1 class="titrePage">La palette du goût</h1>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+  
+          <div class="box1">
+            <h3 class="page-title">ENTRÉES</h3>
+  
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Fricassée d'escargot</h2>
+                    <p>Au piment d'Espelette</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">25€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Foie gras de canard mi-cuit</h2>
+                    <p>Et ses copeaux de truffe noire</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">35€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Oeuf au plat</h2>
+                    <p>Assaisonné à la truffe sur lit de caviar</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">20€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+  
+          <div class="box2">
+              <h3 class="page-title">PLATS</h3>
     
+              <div class="cardsMenu boxCard">
+                <a style="text-decoration: none" href="#">
+                  <div class="boxCardText flexRow">
+                    <div class="textCard">
+                      <h2>Filet de boeuf aux herbes</h2>
+                      <p>Accompagné de sa ribambelle de légumes</p>
+                    </div>
+                    <div class="icnCards">
+                      <p class="cardsMenuTarifs">40€</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="cardsMenu boxCard">
+                <a style="text-decoration: none" href="#">
+                  <div class="boxCardText flexRow">
+                    <div class="textCard">
+                      <h2>Parmentier de queue de boeuf</h2>
+                      <p>À la truffe noire sur sa purée de panais</p>
+                    </div>
+                    <div class="icnCards">
+                      <p class="cardsMenuTarifs">35€</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="cardsMenu boxCard">
+                <a style="text-decoration: none" href="#">
+                  <div class="boxCardText flexRow">
+                    <div class="textCard">
+                      <h2>Filet de turbot</h2>
+                      <p>Aux agrumes</p>
+                    </div>
+                    <div class="icnCards">
+                      <p class="cardsMenuTarifs">44€</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+  
+            <div class="box3">
+              <h3 class="page-title">DESSERTS</h3>
+    
+              <div class="cardsMenu boxCard">
+                <a style="text-decoration: none" href="#">
+                  <div class="boxCardText flexRow">
+                    <div class="textCard">
+                      <h2>Paris-Brest</h2>
+                      <p>Revisité</p>
+                    </div>
+                    <div class="icnCards">
+                      <p class="cardsMenuTarifs">18€</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="cardsMenu boxCard">
+                <a style="text-decoration: none" href="#">
+                  <div class="boxCardText flexRow">
+                    <div class="textCard">
+                      <h2>Macaron au chocolat d'exception</h2>
+                      <p>Et glace à la vanille de Madagascar</p>
+                    </div>
+                    <div class="icnCards">
+                      <p class="cardsMenuTarifs">22€</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="cardsMenu boxCard">
+                <a style="text-decoration: none" href="#">
+                  <div class="boxCardText flexRow">
+                    <div class="textCard">
+                      <h2>Mousse au chocolat</h2>
+                      <p>Au piment d'Espelette et à la truffe noire</p>
+                    </div>
+                    <div class="icnCards">
+                      <p class="cardsMenuTarifs">23€</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+  
+            <button class="button" type="button" onclick="window.location.href = 'https:';">
+              <span class="textButtonsFilters">Commander</span>
+            </button>
+        </section>
+      </main>
+      <footer></footer>
 </body>
 </html>

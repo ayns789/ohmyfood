@@ -1,12 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À la française</title>
+    <!-- liaison de fichiers CSS -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/flexbox.css" />
+    <!-- icônes  -->
+    <script src="https://kit.fontawesome.com/40409bbb33.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header">
+      <a href="#"><i class="fa fa-arrow-left icnHeader"></i></a>
+      <a href="#"
+        ><img class="logo flexCentre" src="../img/logo/ohmyfood.png" alt="logo du site"
+      /></a>
+    </header>
+
+    <main>
+      <img
+        src="../img/a_la_francaise.jpg"
+        class="imgHead"
+        alt="photo d'un plat sur une table de restaurant"
+      />
+      <section class="mainMenus">
+        <div class="flexBetween">
+          <h1 class="titrePage">À la française</h1>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="box1">
+          <h3 class="page-title">ENTRÉES</h3>
+
+          <div class="cardsMenu boxCard">
+            <a style="text-decoration: none" href="#">
+              <div class="boxCardText flexRow">
+                <div class="textCard">
+                  <h2>Tartare de poulpe acidulé</h2>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="icnCards">
+                  <p class="cardsMenuTarifs">25€</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cardsMenu boxCard">
+            <a style="text-decoration: none" href="#">
+              <div class="boxCardText flexRow">
+                <div class="textCard">
+                  <h2>Velouté de légumes d'antan</h2>
+                  <p>Carotte, panais, topinambour</p>
+                </div>
+                <div class="icnCards">
+                  <p class="cardsMenuTarifs">35€</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cardsMenu boxCard">
+            <a style="text-decoration: none" href="#">
+              <div class="boxCardText flexRow">
+                <div class="textCard">
+                  <h2>Soupe à l'oignon</h2>
+                  <p>Revisitée</p>
+                </div>
+                <div class="icnCards">
+                  <p class="cardsMenuTarifs">20€</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="box2">
+            <h3 class="page-title">PLATS</h3>
+  
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Coquilles Saint-Jacques</h2>
+                    <p>Accompagnées d'une purée de panais</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">40€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Magret de canard</h2>
+                    <p>Et parmentier de pommes de terres</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">35€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Pigeonneau d’Ille-et-Vilaine</h2>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">44€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="box3">
+            <h3 class="page-title">DESSERTS</h3>
+  
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Pétales de violettes glacés</h2>
+                    <p>Et purée de noisettes</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">18€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Fondant au chocolat</h2>
+                    <p>Revisité</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">22€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cardsMenu boxCard">
+              <a style="text-decoration: none" href="#">
+                <div class="boxCardText flexRow">
+                  <div class="textCard">
+                    <h2>Millefeuille croustillant</h2>
+                    <p>Myrtilles et pâte d’amande</p>
+                  </div>
+                  <div class="icnCards">
+                    <p class="cardsMenuTarifs">23€</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="button" type="button" onclick="window.location.href = 'https:';">
+            <span class="textButtonsFilters">Commander</span>
+          </button>
+
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

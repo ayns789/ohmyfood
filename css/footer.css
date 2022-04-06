@@ -6,7 +6,7 @@
 .foot h3 {
   padding-top: 1em;
   margin-top: 0;
-  font-family: "Shrik";
+  font-family: "Shrik", sans-serif;
   font-size: 1.2em;
   color: white;
 }
