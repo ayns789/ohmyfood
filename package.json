@@ -2,7 +2,7 @@
   "name": "website_project_3",
   "version": "1.0.0",
   "description": "menus de restaurants", 
-  "main": "accueil.html",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass:./css"
   },
