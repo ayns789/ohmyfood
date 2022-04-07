@@ -28,7 +28,7 @@
 
 .page1_part1 {
   background-color: #F6F6F6;
-  padding-bottom: 3em;
+  padding-bottom: 2.95em;
 }
 
 .partPosition {
@@ -70,6 +70,7 @@
   text-align: center;
   font-size: 1.15em;
   color: #353535;
+  font-family: "RobotoL";
 }
 
 .button {
@@ -161,7 +162,7 @@
 
 .page1_part3 {
   background-color: #F6F6F6;
-  margin-top: 5em;
+  margin-top: 4.5em;
   padding-bottom: 3em;
 }
 .page1_part3 h3 {
@@ -172,7 +173,25 @@
   font-weight: bold;
 }
 
-.textPicture {
+.boxCard {
+  height: auto;
+  margin: auto;
+  width: calc(100% - 20px - 20px);
+  margin-bottom: 1.2em;
+  position: relative;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  box-shadow: 6px 6px 4px #ededed;
+  cursor: pointer;
+}
+.boxCard .imgCards {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  object-position: 30% 60%;
+  width: 100%;
+  height: 11em;
+}
+.boxCard .textPicture {
   position: absolute;
   font-size: 0.85em;
   font-weight: bold;
@@ -182,42 +201,23 @@
   top: 5%;
   right: 4%;
 }
-
-.boxCard {
-  height: auto;
-  margin: auto;
-  margin-bottom: 1.2em;
-  position: relative;
-  border-radius: 15px 15px 15px 15px;
-  background-color: white;
-  box-shadow: 6px 6px 4px #ededed;
-  cursor: pointer;
-}
-
-.imgCards {
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-  object-position: 30% 60%;
-  width: 100%;
-  height: 11em;
-}
-
-.boxCardText {
+.boxCard .boxCardText {
   height: 4.7em;
   width: 100%;
   justify-content: space-between;
 }
-.boxCardText h2 {
+.boxCard .boxCardText h2 {
   font-size: 1.1em;
   font-family: "RobotoM";
   color: black;
   margin: 0.6em 0 0 0.7em;
 }
-.boxCardText p {
+.boxCard .boxCardText p {
   font-size: 1.1em;
   margin: 0.1em 0 -0.5em 0.7em;
+  color: black;
 }
-.boxCardText .icnCards {
+.boxCard .boxCardText .icnCards {
   font-size: 1.5em;
   width: calc(16.6666666667% - 10px - 10px);
   padding: 0.6em 0.8em 2.2em 0;

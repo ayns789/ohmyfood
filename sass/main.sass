@@ -29,7 +29,7 @@ $grey-light:#F6F6F6
 //************* PART 1 ****************
 .page1_part1
   background-color: $grey-light
-  padding-bottom: 3em
+  padding-bottom: 2.95em
   
 .partPosition
   display: flex
@@ -65,6 +65,7 @@ $grey-light:#F6F6F6
     text-align: center
     font-size:1.15em
     color:#353535
+    font-family: 'RobotoL'
 
 .button
   height: 3.1em
@@ -149,7 +150,7 @@ $grey-light:#F6F6F6
 
 .page1_part3
   background-color: $grey-light
-  margin-top: 5em
+  margin-top: 4.5em
   padding-bottom: 3em
   h3
     font-size: 1.45em
@@ -158,53 +159,54 @@ $grey-light:#F6F6F6
     color: black
     font-weight: bold
 
-.textPicture
-  position: absolute
-  // width: 15%
-  font-size: 0.85em
-  font-weight: bold
-  color: #008563
-  padding: 0.5em 1em 0.5em 1em
-  background-color: #99E2D0
-  top: 5%
-  right: 4%
-  // transform: translate(-50%, -50%)
-
 .boxCard
   height: auto
   margin: auto 
+  width: calc(100% * (1 / 1) - 20px - 20px)
   margin-bottom: 1.2em
   position: relative
   border-radius: 15px 15px 15px 15px
   background-color: white
   box-shadow: 6px 6px 4px #ededed
   cursor: pointer
+  .imgCards 
+    border-radius: 15px 15px 0 0
+    object-fit: cover
+    object-position: 30% 60%
+    width: 100%
+    height: 11em
+  .textPicture
+    position: absolute
+    // width: 15%
+    font-size: 0.85em
+    font-weight: bold
+    color: #008563
+    padding: 0.5em 1em 0.5em 1em
+    background-color: #99E2D0
+    top: 5%
+    right: 4%
+    // transform: translate(-50%, -50%)
+  .boxCardText
+    height: 4.7em
+    width: 100%
+    justify-content: space-between
+    h2
+      font-size: 1.1em
+      font-family: "RobotoM"
+      color: black
+      margin: 0.6em 0 0 0.7em
+    p
+      font-size: 1.1em
+      margin: 0.1em 0 -0.5em 0.7em
+      color: black
+    .icnCards
+      font-size: 1.5em
+      width: calc(100% * (1 / 6) - 10px - 10px)
+      padding: 0.6em 0.8em 2.2em 0
+      margin-right: 0.2em
+      color: black
 
-.imgCards 
-  border-radius: 15px 15px 0 0
-  object-fit: cover
-  object-position: 30% 60%
-  width: 100%
-  height: 11em
 
-.boxCardText
-  height: 4.7em
-  width: 100%
-  justify-content: space-between
-  h2
-    font-size: 1.1em
-    font-family: "RobotoM"
-    color: black
-    margin: 0.6em 0 0 0.7em
-  p
-    font-size: 1.1em
-    margin: 0.1em 0 -0.5em 0.7em
-  .icnCards
-    font-size: 1.5em
-    width: calc(100% * (1 / 6) - 10px - 10px)
-    padding: 0.6em 0.8em 2.2em 0
-    margin-right: 0.2em
-    color: black
 
 
 
