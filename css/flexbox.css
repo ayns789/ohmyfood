@@ -58,6 +58,13 @@
   flex-wrap: wrap;
 }
 
+.flexColumnEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
 .flexColumnAround {
   display: flex;
   flex-direction: column;

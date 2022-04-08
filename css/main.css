@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Shrik";
-  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
+  src: url("../fonts/shrikhand-regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "RobotoL";
@@ -79,7 +79,6 @@
   margin: 0.5em 0 0.5em 0;
   padding: 0 1.3em 0.3em 1.3em;
   color: white;
-  font-weight: semi-bold;
   border-radius: 40px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border: 0em #D0D0D0 solid;
@@ -220,35 +219,9 @@
 .boxCard .boxCardText .icnCards {
   font-size: 1.5em;
   width: calc(16.6666666667% - 10px - 10px);
-  padding: 0.6em 0.8em 2.2em 0;
+  padding: 0.6em 0.2em 2.2em 0;
   margin-right: 0.2em;
   color: black;
-}
-
-.imgHead {
-  width: 100%;
-}
-
-.mainMenus {
-  background-color: #F6F6F6;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  top: 32%;
-  padding: 0 1em 0 1em;
-  padding-bottom: 3em;
-  border-radius: 2.5em 2.5em 0 0;
-}
-.mainMenus h3 {
-  font-size: 1em;
-  font-family: "RobotoL";
-}
-
-.titrePage {
-  margin-height: 2em;
-}
-.titrePage h1 {
-  font-family: "Shrik";
 }
 
 .page-title:after {
@@ -260,32 +233,86 @@
   border-bottom: 3px solid #99E2D0;
 }
 
-.cardsMenu {
+.imgHead {
   width: 100%;
-  height: 4.5em;
-  margin-bottom: 1em;
+  min-width: 20em;
 }
-.cardsMenu .textCard {
-  margin: 0;
+
+.mainMenus {
+  background-color: #F6F6F6;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  top: 32%;
+  padding: 0 1em 0 1em;
+  padding-bottom: 3em;
+  border-radius: 2.5em 2.5em 0 0;
+  min-width: 20em;
+}
+.mainMenus h3 {
+  font-size: 1em;
+  font-family: "RobotoL";
+}
+
+.titrePage {
+  margin-top: 1em;
+}
+.titrePage h1 {
+  font-family: "Shrik";
+  font-size: 1em;
+  height: auto;
+}
+
+.cardsMenu {
+  justify-content: space-between;
+  height: auto;
+  margin: auto;
+  margin-bottom: 1.2em;
+  padding-right: 0;
+  width: 100%;
+  min-width: 20em;
+  position: relative;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  box-shadow: 6px 6px 4px #ededed;
+  cursor: pointer;
+}
+.cardsMenu p {
   padding: 0;
+  margin: 0;
 }
-.cardsMenu .textCard h2 {
+.cardsMenu .textCardM {
+  width: calc(100% - 80px);
+  margin-right: 80px;
+}
+.cardsMenu .textCardM .titleCardsM {
   font-size: 1.15em;
   font-family: "RobotoR";
-  color: black;
-  margin: 0.6em 0 0 0.7em;
-}
-.cardsMenu .textCard p {
-  font-size: 0.95em;
-  margin: 0.2em 0 0 0.7em;
-  width: 105%;
+  margin: 0;
+  padding: 0.5em 0 0.15em 0.65em;
   color: black;
 }
-.cardsMenu .cardsMenuTarifs {
-  font-size: 0.7em;
+.cardsMenu .textCardM .descriptMenu {
+  font-size: 15px;
+  padding: 0 0 0.8em 0.65em;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cardsMenu .icnCardsM {
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+.cardsMenu .icnCardsM .cardsMenuTarifs {
   font-family: "RobotoM";
-  padding: 1.2em 0 0 0;
-  margin-right: 0.1em;
+  padding-bottom: 0.75em;
+  margin-right: 0.2em;
+  color: black;
+  position: absolute;
+  right: 15px;
+  bottom: 0px;
 }
 
 .box1, .box2, .box3 {
