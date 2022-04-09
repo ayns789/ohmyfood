@@ -1,18 +1,33 @@
 #header {
   box-sizing: border-box;
   width: 100%;
+  min-width: 350px;
   margin: auto;
-  height: 3.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
   position: relative;
   box-shadow: 0 0.2em 0.2em #D1D1D1;
 }
 
-.icnHeader {
+.icnHeader1 {
   width: 0em;
+}
+
+.icnHeader {
+  width: 1.1em;
+  height: auto;
+  padding-top: 0.1em;
+  position: absolute;
+  top: 35%;
+  left: 6%;
+  color: #353535;
 }
 
 .logo {
   margin: auto;
+  padding-top: 0.4em;
   width: 10.5em;
 }
 

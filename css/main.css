@@ -235,15 +235,25 @@
 
 .imgHead {
   width: 100%;
-  min-width: 20em;
+  min-width: 350px;
+  min-height: 15.8em;
+  max-height: 20em;
+  objectif-fit: cover;
+}
+
+.imgHead2 {
+  width: 100%;
+  overflow: hidden;
+  max-height: 17em;
 }
 
 .mainMenus {
   background-color: #F6F6F6;
-  position: absolute;
+  position: relative;
   right: 0%;
   left: 0%;
-  top: 32%;
+  top: 33%;
+  margin-top: -3.6em;
   padding: 0 1em 0 1em;
   padding-bottom: 3em;
   border-radius: 2.5em 2.5em 0 0;
@@ -253,14 +263,38 @@
   font-size: 1em;
   font-family: "RobotoL";
 }
+.mainMenus .buttonCards {
+  margin-top: 1.2em;
+  margin-bottom: 0.2em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.mainMenus .buttonCards .button {
+  padding: 0 3em 0.3em 3em;
+  margin: auto;
+  cursor: pointer;
+}
 
 .titrePage {
-  margin-top: 1em;
+  padding-top: 0.9em;
 }
 .titrePage h1 {
-  font-family: "Shrik";
-  font-size: 1em;
+  font-family: "Shrik", sans-serif;
+  font-size: 1.8em;
+  padding-left: 0.2em;
+  padding-right: 0;
+  margin-right: 0;
+  font-weight: 500;
+}
+.titrePage .logoTopCard {
+  width: 1.6em;
+  -webkit-text-stroke: 1px white;
   height: auto;
+  position: absolute;
+  right: 35px;
 }
 
 .cardsMenu {
@@ -282,8 +316,8 @@
   margin: 0;
 }
 .cardsMenu .textCardM {
-  width: calc(100% - 80px);
-  margin-right: 80px;
+  width: calc(100% - 70px);
+  margin-right: 70px;
 }
 .cardsMenu .textCardM .titleCardsM {
   font-size: 1.15em;

@@ -75,7 +75,7 @@ $grey-light:#F6F6F6
   color: white
   // font-weight: semi-bold
   border-radius: 40px
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC)
+  background: linear-gradient(to bottom right, $color-secondary, $color-primary)
   border: 0em #D0D0D0 solid
   box-shadow: 0 0.4em 0.4em #D0D0D0
   cursor: pointer
@@ -105,7 +105,7 @@ $grey-light:#F6F6F6
   cursor: pointer
   
 .icnOutBtnBox
-  background-color: #9356DC
+  background-color: $color-primary
   max-height: 20px
   padding: 3px 5px 3px 10px
   border-radius: 50px
@@ -182,7 +182,7 @@ $grey-light:#F6F6F6
     font-weight: bold
     color: #008563
     padding: 0.5em 1em 0.5em 1em
-    background-color: #99E2D0
+    background-color: $color-tertiary
     top: 5%
     right: 4%
     // transform: translate(-50%, -50%)
@@ -212,7 +212,7 @@ $grey-light:#F6F6F6
     margin: 0 0 0 0
     width: 2.5em
     padding-top: 6px
-    border-bottom: 3px solid #99E2D0
+    border-bottom: 3px solid $color-tertiary
 
 
 
@@ -223,14 +223,31 @@ $grey-light:#F6F6F6
 
 .imgHead
   width: 100%
-  min-width: 20em
+  min-width: 350px
+  min-height: 15.8em
+  max-height: 20em
+  objectif-fit: cover
+  // object-position: 0px 0px
+
+.imgHead2
+  width: 100%
+  // position: absolute
+  // clip::rect(60px auto auto 60px) 
+  // min-width: 350px
+  overflow: hidden
+  max-height: 17em
+  // height: 270px
+  // min-height: 14em
+  // position: absolute
+  // margin:1em
 
 .mainMenus
-  background-color: #F6F6F6
-  position: absolute
+  background-color: $grey-light
+  position: relative
   right: 0%
   left: 0%
-  top: 32%
+  top: 33%
+  margin-top: -3.6em
   padding: 0 1em 0 1em
   padding-bottom: 3em
   border-radius: 2.5em 2.5em 0 0
@@ -239,14 +256,36 @@ $grey-light:#F6F6F6
     font-size: 1em
     font-family: 'RobotoL'
     // border-bottom: solid 2px 
+  .buttonCards
+    margin-top:1.2em
+    margin-bottom: 0.2em
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    .button
+      padding: 0 3em 0.3em 3em
+      margin: auto 
+      cursor: pointer
+    
 
 .titrePage
-  margin-top: 1em 
+  // margin-top: 1.3em 
+  padding-top: 0.9em
   h1
-    font-family: 'Shrik'
-    font-size: 1em 
+    font-family: 'Shrik', sans-serif
+    font-size: 1.8em 
+    padding-left: 0.2em
+    padding-right:0
+    margin-right:0
+    font-weight: 500
+  .logoTopCard
+    width: 1.6em
+    -webkit-text-stroke: 1px white
     height: auto
-
+    position: absolute
+    right:35px
 
 .cardsMenu
   justify-content: space-between
@@ -265,31 +304,24 @@ $grey-light:#F6F6F6
     padding:0
     margin:0
   .textCardM
-    // display:block
-    // max-width: calc (100%) -5px -85px
-    // flex-basis: 90%
-    width: calc(100% - 80px)
-    margin-right: 80px
+    width: calc(100% - 70px)
+    margin-right: 70px
     .titleCardsM
       font-size: 1.15em
       font-family: "RobotoR"
       margin: 0
       padding: 0.5em 0 0.15em 0.65em
       color: black
-      // width: 15em
     .descriptMenu
       font-size: 15px
       padding:  0 0 0.8em 0.65em
-      // padding:  0px 85px 12px 12px
       color: black
       overflow: hidden
       text-overflow: ellipsis 
       white-space : nowrap
-      // width: 18em
   .icnCardsM
     flex-direction: column
     justify-content: flex-end
-    // min-width: 20em
     // flex-basis: 8%
     margin-right: 15px
     .cardsMenuTarifs
@@ -297,14 +329,9 @@ $grey-light:#F6F6F6
       padding-bottom: 0.75em
       margin-right: 0.2em
       color: black
-      
       position: absolute
       right:15px
       bottom: 0px
-        
-      
-
-
 
 .box1, .box2, .box3
   padding-bottom: 0.5em
