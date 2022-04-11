@@ -1,32 +1,34 @@
-.foot
+@mixin -footer-logo-prop
+    color: white
+    height: auto
+
+.footer
     background-color: #353535
     width: 100%
-    // height: 20em
+    min-width: 350px
     position: relative
     bottom: 0
-    .footBox
+    margin-bottom: -2.5em
+    &__box
         padding: 0.5em 1em 2.5em 1.6em
-    h3
-        font-family: 'Shrik', sans-serif
-        font-weight: 100
-        font-size: 1.15em
-        padding-bottom: -2.5em
-        color: white
-ul
-    list-style-type: none
-    margin:0
-    padding:0
-    li
-        padding-bottom: 0.5em
-        color: white
-        font-size: 1em
-.logoFoot1, .logoFoot2 
-    color: white
+        h3
+            font-family: 'Shrik', sans-serif
+            font-weight: 100
+            font-size: 1.15em
+            
+            color: white
+        ul
+            list-style-type: none
+            margin:0
+            padding:0
+            li, a
+                padding-bottom: 0.5em
+                color: white
+                font-size: 1em
+        &__logoFoot1
+            width: 0.7em
+            @include -footer-logo-prop
+        &__logoFoot2 
+            width: 0.9em
+            @include -footer-logo-prop
 
-.logoFoot1
-    width: 0.7em
-    height: auto
-
-.logoFoot2 
-    width: 0.9em
-    height: auto

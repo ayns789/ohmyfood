@@ -3,6 +3,18 @@ $color-secondary:#FF79DA
 $color-tertiary:#99E2D0
 $grey:#EAEAEA
 $grey-light:#F6F6F6
+$grey-dark: #353535
+$grey-icn-btn-accueil: #7E7E7E
+$grey-border-boxShadow: #D0D0D0
+
+
+$full-width: 100%
+
+@mixin -flexRowCenter
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
 
 @font-face 
   font-family: 'Shrik'
@@ -25,18 +37,19 @@ $grey-light:#F6F6F6
 
 *
   font-family: 'RobotoR'
+  a
+    text-decoration: none
 
+  
 //************* PART 1 ****************
 .page1_part1
   background-color: $grey-light
   padding-bottom: 2.95em
+  min-width: 350px
   
 .partPosition
-  display: flex
-  flex-direction: row
-  justify-content: center
-  align-items: center
-  width: 100%
+  @include -flexRowCenter
+  width: $full-width
   height: 3.1em
   background-color: $grey
   padding: 0
@@ -44,7 +57,7 @@ $grey-light:#F6F6F6
   h3
     font-size: 1em
     margin-top: 1em
-    color: #353535
+    color: $grey-dark
   #icnPosition
     margin-right: 1em
 
@@ -53,7 +66,7 @@ $grey-light:#F6F6F6
   justify-content: center
   align-items: center
   flex-wrap: wrap
-  h1
+  > h1
     margin-top: 1.5em
     font-size: 1.5em
     width: 70%
@@ -61,11 +74,14 @@ $grey-light:#F6F6F6
     font-family: "RobotoM"
   p 
     width: 99%
+    padding-left: 30px
+    padding-right: 30px
     margin-top: -0.2em
     text-align: center
     font-size:1.15em
-    color:#353535
+    color:$grey-dark
     font-family: 'RobotoL'
+
 
 .button
   height: 3.1em
@@ -73,78 +89,91 @@ $grey-light:#F6F6F6
   margin: 0.5em 0 0.5em 0
   padding: 0 1.3em 0.3em 1.3em
   color: white
-  // font-weight: semi-bold
   border-radius: 40px
   background: linear-gradient(to bottom right, $color-secondary, $color-primary)
-  border: 0em #D0D0D0 solid
-  box-shadow: 0 0.4em 0.4em #D0D0D0
+  border: 0em $grey-border-boxShadow solid
+  box-shadow: 0 0.4em 0.4em $grey-border-boxShadow
   cursor: pointer
+  &:hover 
+    background: linear-gradient(to bottom right,  lighten($color-secondary, 5%), lighten($color-primary, 5%))
+    box-shadow: 0 0.4em 0.2em $grey-border-boxShadow
+    // filter: brightness(110%)
+    // box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3)
+    // #BE8DE6#F19DE5
+    // background: linear-gradient(to bottom right, #F19DE5, #BE8DE6)
+
+  
 
 
 //************* PART 2 ****************
 .page1_part2
   margin: 2.8em 1.7em 3em 1.7em
-  h3
+  // min-width: 350px
+  > h3
     font-size: 1.5em
     font-family: "RobotoM"
     margin: 0 0 1.2em -0.2em
 
 .boxButtonSearch
   margin: 0 0 1.5em 0.3em
+  &__search
+    &__btnPart2
+      height: 4.8em
+      margin: 0 
+      // padding: auto
+      width: $full-width
+      min-width:21em
+      background-color: $grey-light
+      font-size: 1em
+      border: none
+      border-radius: 1.5em
+      box-shadow: 0 0.2em 0.8em $grey-border-boxShadow
+      cursor: pointer
+      > .icnOutBtnBox
+        background-color: $color-primary
+        max-height: 20px
+        padding: 3px 10px 3px 10px
+        border-radius: 50px
+        margin-right: 5px
+        position: absolute
+        // top:2px
+        left:20px
+      .icnOutBtn
+        width: 0.45em
+        color: white
+      #icnBurgerBtn
+        color: $grey-icn-btn-accueil
+        padding: 0 1.2em 0 0.2em
+        .icnBurgerBtn1
+          width: 0.3em
+          height: auto
+          padding-right: 0.08em
+        .icnBurgerBtn2
+          width: 1.07em
+          height: auto
+      .icnInBtn
+        color: $grey-icn-btn-accueil
+        padding: 0 1.3em 0 1.3em
+        width: 1em 
+        height: auto
+      .icnInBtn2
+        color: $grey-icn-btn-accueil
+        padding: 0 1.3em 0 1.3em
+        width: 1.4em
+        height: auto
+      .buttonText
+        font-weight: bold
+        padding-right: 4em
+        color: black 
+      &:hover
+        background-color: #F5EDFF
+        box-shadow: 0 0.4em 0.7em $grey-border-boxShadow
+        .icnInBtn2, .icnInBtn, .icnBurgerBtn2, .icnBurgerBtn1
+          color: $color-primary 
 
-.btnPart2
-  height: 4.8em
-  margin: 0 0em 0 0em
-  width: 100%
-  min-width:21em
-  background-color: $grey-light
-  font-size: 1em
-  border: none
-  border-radius: 1.5em
-  box-shadow: 0 0.2em 0.8em #D0D0D0
-  cursor: pointer
+        
+
   
-.icnOutBtnBox
-  background-color: $color-primary
-  max-height: 20px
-  padding: 3px 5px 3px 10px
-  border-radius: 50px
-  margin: 2px 0 5px -105px
-
-.icnOutBtn
-  width: 0.45em
-  color: white
-  
-
-#icnBurgerBtn
-  color: #7E7E7E
-  padding: 0 1.2em 0 1.2em
-
-.icnBurgerBtn1
-  width: 0.3em
-  height: auto
-  padding-right: 0.08em
-
-.icnBurgerBtn2
-  width: 1.07em
-  height: auto
-  
-
-.icnInBtn
-  color: #7E7E7E
-  padding: 0 1.3em 0 1.3em
-  width: 1em 
-  height: auto
-
-
-.icnInBtn2
-  color: #7E7E7E
-  padding: 0 1.3em 0 1.3em
-  width: 1.4em
-  height: auto
-
-.buttonText
-  font-weight: bold
 
 //************* PART 3 ****************
 
@@ -152,7 +181,8 @@ $grey-light:#F6F6F6
   background-color: $grey-light
   margin-top: 4.5em
   padding-bottom: 3em
-  h3
+  min-width: 350px
+  > h3
     font-size: 1.45em
     padding: 2.5em 0 0 1em
     font-family: "RobotoM"
@@ -173,7 +203,7 @@ $grey-light:#F6F6F6
     border-radius: 15px 15px 0 0
     object-fit: cover
     object-position: 30% 60%
-    width: 100%
+    width: $full-width
     height: 11em
   .textPicture
     position: absolute
@@ -183,12 +213,12 @@ $grey-light:#F6F6F6
     color: #008563
     padding: 0.5em 1em 0.5em 1em
     background-color: $color-tertiary
-    top: 5%
-    right: 4%
+    top: 1em
+    right: 1em
     // transform: translate(-50%, -50%)
   .boxCardText
     height: 4.7em
-    width: 100%
+    width: $full-width
     justify-content: space-between
     h2
       font-size: 1.1em
@@ -200,11 +230,35 @@ $grey-light:#F6F6F6
       margin: 0.1em 0 -0.5em 0.7em
       color: black
     .icnCards
+      position: absolute
+      top: 8em
+      right: 0.8em
+      .heartV1
       font-size: 1.5em
-      width: calc(100% * (1 / 6) - 10px - 10px)
-      padding: 0.6em 0.2em 2.2em 0
-      margin-right: 0.2em
       color: black
+      .heartV2
+        font-size: 0
+      &:hover
+        .heartV1
+          font-size:0 
+        .heartV2
+          font-size: 1em
+          padding-right: 0.25em
+          color: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333)) !important
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+          
+  
+// .icnCards
+//   .fa-solid
+//     width: 0
+//   &:hover
+//     .fa-regular
+//       width:0
+//     .fa-solid
+      
+//     color: linear-gradient(to bottom left, $color-secondary, $color-primary) !important
+
 
 .page-title:after 
     content: "" 
@@ -220,26 +274,27 @@ $grey-light:#F6F6F6
 
 
 // PAGES CARDS
+main
+  .imgHead
+    width: $full-width
+    min-width: 350px
+    min-height: 15.8em
+    max-height: 20em
+    objectif-fit: cover
+    // object-position: 0px 0px
+  .imgHead2
+    width: $full-width
+    // clip::rect(60px auto auto 60px) 
+    min-width: 350px
+    objectif-fit: cover
+    overflow: hidden
+    // max-height: 17em
+    height: 17em
+    object-position: 60% 30% 
+    // min-height: 14em
+    // position: absolute
+    // margin:1em
 
-.imgHead
-  width: 100%
-  min-width: 350px
-  min-height: 15.8em
-  max-height: 20em
-  objectif-fit: cover
-  // object-position: 0px 0px
-
-.imgHead2
-  width: 100%
-  // position: absolute
-  // clip::rect(60px auto auto 60px) 
-  // min-width: 350px
-  overflow: hidden
-  max-height: 17em
-  // height: 270px
-  // min-height: 14em
-  // position: absolute
-  // margin:1em
 
 .mainMenus
   background-color: $grey-light
@@ -252,6 +307,22 @@ $grey-light:#F6F6F6
   padding-bottom: 3em
   border-radius: 2.5em 2.5em 0 0
   min-width: 20em
+  > .titrePage
+    // margin-top: 1.3em 
+    padding-top: 0.9em
+    > h1
+      font-family: 'Shrik', sans-serif
+      font-size: 1.8em 
+      padding-left: 0.2em
+      padding-right:0
+      margin-right:0
+      font-weight: 500
+    .logoTopCard
+      width: 1.6em
+      -webkit-text-stroke: 1px white
+      height: auto
+      position: absolute
+      right:35px
   h3
     font-size: 1em
     font-family: 'RobotoL'
@@ -259,33 +330,12 @@ $grey-light:#F6F6F6
   .buttonCards
     margin-top:1.2em
     margin-bottom: 0.2em
-    width: 100%
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    .button
+    width: $full-width
+    @include -flexRowCenter
+    > .button
       padding: 0 3em 0.3em 3em
       margin: auto 
       cursor: pointer
-    
-
-.titrePage
-  // margin-top: 1.3em 
-  padding-top: 0.9em
-  h1
-    font-family: 'Shrik', sans-serif
-    font-size: 1.8em 
-    padding-left: 0.2em
-    padding-right:0
-    margin-right:0
-    font-weight: 500
-  .logoTopCard
-    width: 1.6em
-    -webkit-text-stroke: 1px white
-    height: auto
-    position: absolute
-    right:35px
 
 .cardsMenu
   justify-content: space-between
@@ -293,7 +343,7 @@ $grey-light:#F6F6F6
   margin: auto
   margin-bottom: 1.2em
   padding-right: 0 
-  width: 100%
+  width: $full-width
   min-width: 20em
   position: relative
   border-radius: 15px 15px 15px 15px
@@ -306,7 +356,7 @@ $grey-light:#F6F6F6
   .textCardM
     width: calc(100% - 70px)
     margin-right: 70px
-    .titleCardsM
+    > .titleCardsM
       font-size: 1.15em
       font-family: "RobotoR"
       margin: 0
@@ -324,7 +374,7 @@ $grey-light:#F6F6F6
     justify-content: flex-end
     // flex-basis: 8%
     margin-right: 15px
-    .cardsMenuTarifs
+    > .cardsMenuTarifs
       font-family: "RobotoM"
       padding-bottom: 0.75em
       margin-right: 0.2em
