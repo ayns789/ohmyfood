@@ -1,0 +1,106 @@
+@media all and (min-width: 768px) and (max-width: 1191px) {
+  .page1_part3 {
+    padding-bottom: 3em;
+  }
+  .page1_part3 .boxCards {
+    flex-flow: row wrap;
+  }
+  .page1_part3 .boxCards .boxCard {
+    width: calc(50% - 20px - 20px);
+    margin-bottom: 3em;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1191px) {
+  main .imgHead {
+    min-height: 28em;
+    max-height: 30em;
+  }
+  main .mainMenus {
+    max-width: 800px !important;
+  }
+  main .mainMenus .titrePage {
+    max-width: 800px;
+  }
+}
+@media all and (min-width: 1192px) {
+  .page1_part3 {
+    padding-bottom: 3em;
+  }
+  .page1_part3 .boxCards {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 1500px;
+  }
+  .page1_part3 .boxCards .boxCard {
+    width: calc(33.3333333333% - 20px - 20px);
+    margin-bottom: 3em;
+  }
+}
+@media all and (min-width: 1500px) {
+  .page1_part3 .titleSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2em;
+    margin: auto;
+    margin-top: 0;
+    max-width: 1480px;
+  }
+}
+@media all and (min-width: 768px) {
+  main .imgHead {
+    min-height: 28em;
+    max-height: 30em;
+  }
+  main .mainMenus {
+    max-width: 800px;
+  }
+  main .mainMenus .titrePage {
+    max-width: 800px;
+  }
+
+  .page1_part2 .titleSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    max-width: 1480px;
+  }
+  .page1_part2 .box2 {
+    display: flex;
+    flex-flow: row-wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .page1_part2 .box2 .boxButtonSearch {
+    margin: 2em;
+  }
+  .page1_part2 .box2 .boxButtonSearch .boxButtonSearch__search__btnPart2 {
+    max-width: 21em;
+    min-width: 20em;
+  }
+  .page1_part2 .box2 .boxButtonSearch .boxButtonSearch__search__btnPart2 .icnOutBtnBox {
+    position: relative;
+    padding: 3px 5px 3px 10px;
+    margin-left: -40px;
+    margin-right: 28px;
+  }
+  .page1_part2 .box2 .boxButtonSearch .boxButtonSearch__search__btnPart2 #icnBurgerBtn {
+    margin-left: 0.8em;
+    margin-right: 0.2em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer__box {
+    position: center;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=responsiveTabDesk.css.map */

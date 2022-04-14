@@ -56,6 +56,7 @@
 }
 
 .entete {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,40 +80,48 @@
   font-family: "RobotoL";
 }
 
-.button {
+.buttonCards {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0 0.5em 0;
+}
+.buttonCards .button {
   height: 3.1em;
   font-size: 1.05em;
-  margin: 0.5em 0 0.5em 0;
   padding: 0 1.3em 0.3em 1.3em;
   color: white;
   border-radius: 40px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  border: 0em #D0D0D0 solid;
+  border: none;
   box-shadow: 0 0.4em 0.4em #D0D0D0;
   cursor: pointer;
 }
-.button:hover {
+.buttonCards .button:hover {
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
   box-shadow: 0 0.4em 0.2em #D0D0D0;
 }
 
 .page1_part2 {
   margin: 2.8em 1.7em 3em 1.7em;
+  min-width: 21em;
 }
-.page1_part2 > h3 {
+.page1_part2 h3 {
   font-size: 1.5em;
   font-family: "RobotoM";
   margin: 0 0 1.2em -0.2em;
 }
 
 .boxButtonSearch {
-  margin: 0 0 1.5em 0.3em;
+  margin: 0 0 1.5em 0;
 }
 .boxButtonSearch__search__btnPart2 {
   height: 4.8em;
   margin: 0;
   width: 100%;
-  min-width: 21em;
   background-color: #F6F6F6;
   font-size: 1em;
   border: none;
@@ -177,9 +186,11 @@
   padding-bottom: 3em;
   min-width: 350px;
 }
-.page1_part3 > h3 {
-  font-size: 1.45em;
+.page1_part3 .titleSection {
   padding: 2.5em 0 0 1em;
+}
+.page1_part3 .titleSection h3 {
+  font-size: 1.45em;
   font-family: "RobotoM";
   color: black;
   font-weight: bold;
@@ -231,8 +242,10 @@
 }
 .boxCard .boxCardText .icnCards {
   position: absolute;
-  top: 8em;
+  top: 12.5em;
   right: 0.8em;
+}
+.boxCard .boxCardText .icnCards .heartV1 {
   font-size: 1.5em;
   color: black;
 }
@@ -243,10 +256,14 @@
   font-size: 0;
 }
 .boxCard .boxCardText .icnCards:hover .heartV2 {
-  font-size: 1em;
-  padding-right: 0.25em;
-  color: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333)) !important;
+  font-size: 1.5em;
+  padding-right: 0.17em;
+  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -304,6 +321,10 @@ main .imgHead2 {
   height: auto;
   position: absolute;
   right: 35px;
+  cursor: pointer;
+}
+.mainMenus > .titrePage .logoTopCard:hover {
+  color: purple;
 }
 .mainMenus h3 {
   font-size: 1em;
@@ -312,11 +333,6 @@ main .imgHead2 {
 .mainMenus .buttonCards {
   margin-top: 1.2em;
   margin-bottom: 0.2em;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .mainMenus .buttonCards > .button {
   padding: 0 3em 0.3em 3em;

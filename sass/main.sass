@@ -62,6 +62,7 @@ $full-width: 100%
     margin-right: 1em
 
 .entete
+  width: $full-width 
   display: flex
   justify-content: center
   align-items: center
@@ -83,24 +84,28 @@ $full-width: 100%
     font-family: 'RobotoL'
 
 
-.button
-  height: 3.1em
-  font-size: 1.05em
+.buttonCards
+  width: $full-width
+  position: relative
+  @include -flexRowCenter
   margin: 0.5em 0 0.5em 0
-  padding: 0 1.3em 0.3em 1.3em
-  color: white
-  border-radius: 40px
-  background: linear-gradient(to bottom right, $color-secondary, $color-primary)
-  border: 0em $grey-border-boxShadow solid
-  box-shadow: 0 0.4em 0.4em $grey-border-boxShadow
-  cursor: pointer
-  &:hover 
-    background: linear-gradient(to bottom right,  lighten($color-secondary, 5%), lighten($color-primary, 5%))
-    box-shadow: 0 0.4em 0.2em $grey-border-boxShadow
-    // filter: brightness(110%)
-    // box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3)
-    // #BE8DE6#F19DE5
-    // background: linear-gradient(to bottom right, #F19DE5, #BE8DE6)
+  .button
+    height: 3.1em
+    font-size: 1.05em
+    padding: 0 1.3em 0.3em 1.3em
+    color: white
+    border-radius: 40px
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary)
+    border: none
+    box-shadow: 0 0.4em 0.4em $grey-border-boxShadow
+    cursor: pointer
+    &:hover 
+      background: linear-gradient(to bottom right,  lighten($color-secondary, 5%), lighten($color-primary, 5%))
+      box-shadow: 0 0.4em 0.2em $grey-border-boxShadow
+      // filter: brightness(110%)
+      // box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3)
+      // #BE8DE6#F19DE5
+      // background: linear-gradient(to bottom right, #F19DE5, #BE8DE6)
 
   
 
@@ -108,21 +113,21 @@ $full-width: 100%
 //************* PART 2 ****************
 .page1_part2
   margin: 2.8em 1.7em 3em 1.7em
-  // min-width: 350px
-  > h3
+  min-width:21em
+  h3
     font-size: 1.5em
     font-family: "RobotoM"
     margin: 0 0 1.2em -0.2em
 
 .boxButtonSearch
-  margin: 0 0 1.5em 0.3em
+  margin: 0 0 1.5em 0
   &__search
     &__btnPart2
       height: 4.8em
       margin: 0 
       // padding: auto
       width: $full-width
-      min-width:21em
+      // min-width:21em
       background-color: $grey-light
       font-size: 1em
       border: none
@@ -173,7 +178,7 @@ $full-width: 100%
 
         
 
-  
+
 
 //************* PART 3 ****************
 
@@ -182,12 +187,13 @@ $full-width: 100%
   margin-top: 4.5em
   padding-bottom: 3em
   min-width: 350px
-  > h3
-    font-size: 1.45em
+  .titleSection
     padding: 2.5em 0 0 1em
-    font-family: "RobotoM"
-    color: black
-    font-weight: bold
+    h3
+      font-size: 1.45em
+      font-family: "RobotoM"
+      color: black
+      font-weight: bold
 
 .boxCard
   height: auto
@@ -231,22 +237,45 @@ $full-width: 100%
       color: black
     .icnCards
       position: absolute
-      top: 8em
+      top: 12.5em
       right: 0.8em
       .heartV1
-      font-size: 1.5em
-      color: black
+        font-size: 1.5em
+        color: black
       .heartV2
         font-size: 0
+        // transition: color 1000ms 
       &:hover
         .heartV1
-          font-size:0 
+          font-size: 0 
+        // .icnCards a .heartV2:before
+        //   display: inline
+        //   padding-right: 1em
         .heartV2
-          font-size: 1em
-          padding-right: 0.25em
-          color: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333)) !important
+          font-size: 1.5em
+          padding-right: 0.17em
+          background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%)
+          background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%)
+          background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%)
+          // background: -moz-linear-gradient(to bottom left, $color-secondary, $color-primary)
+          // background: -webkit-linear-gradient(to bottom left, $color-secondary, $color-primary)
+          // background: linear-gradient(to bottom left, $color-secondary, $color-primary)
           -webkit-background-clip: text
+          -moz-background-clip: text
+          background-clip: text
+          // text-fill-color: transparent
           -webkit-text-fill-color: transparent
+          // color: purple
+          // webkit-text-fill-color: transparent
+          // webkit-background-clip: text 
+          // webkit-background: -webkit-linear-gradient($color-secondary, $color-primary)
+          // color: lighten($colorTest, 10%)
+          // color: $color-primary
+          // background-clip: text 
+          // -wwebkit-background-clip: text
+          // background: linear-gradient(to bottom left, $color-secondary, $color-primary) !important
+          // text-fill-color: transparent
+          // background-image: linear-gradient(to right, purple, pink)
           
   
 // .icnCards
@@ -256,7 +285,7 @@ $full-width: 100%
 //     .fa-regular
 //       width:0
 //     .fa-solid
-      
+      //  background: -webkit-gradient(linear, left top, left bottom, from(#0c8), to(#333));
 //     color: linear-gradient(to bottom left, $color-secondary, $color-primary) !important
 
 
@@ -323,6 +352,9 @@ main
       height: auto
       position: absolute
       right:35px
+      cursor: pointer
+      &:hover
+        color: purple
   h3
     font-size: 1em
     font-family: 'RobotoL'
@@ -330,8 +362,6 @@ main
   .buttonCards
     margin-top:1.2em
     margin-bottom: 0.2em
-    width: $full-width
-    @include -flexRowCenter
     > .button
       padding: 0 3em 0.3em 3em
       margin: auto 

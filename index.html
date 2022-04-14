@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsiveTabDesk.css" />
     <link rel="stylesheet" href="css/flexbox.css" />
     <link rel="stylesheet" href="css/loadingSpinner.css" />
     <!-- icônes  -->
@@ -18,8 +19,7 @@
   <body>
     <!-- <div class="loadingEffect">
       <div class="custom-loading-spinner"></div> -->
-    <header class="header">
-        <a href="#"><i class="fa fa-arrow-left header__icnHeader0"></i></a>
+    <header class="header1">
       <a href="#"><img class="header__logo flexCentre" src="img/logo/ohmyfood.png" alt="logo du site" /></a>
     </header>
     
@@ -33,14 +33,17 @@
         <div class="entete">
           <h1>Réservez le menu qui vous convient</h1>
           <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-          <div class="buttonCards"><button class="button" type="button" onclick="window.location.href='https:';">
+          <div class="buttonCards"><button class="button" type="button" onclick="window.location.href = 'https:';">
             <span class="textButtonsFilters">Explorer nos restaurants</span>
           </button></div>
         </div>
       </section>
 
       <section class="page1_part2">
+        <div class="titleSection">
         <h3>Fonctionnement</h3>
+      </div>
+        <div class="box2">
         <div class="boxButtonSearch">
           <div class="boxButtonSearch__search">
             <button type="button" class="boxButtonSearch__search__btnPart2">
@@ -69,10 +72,13 @@
             </button>
           </div>
         </div>
+      </div>
       </section>
 
       <section class="page1_part3">
+        <div class="titleSection">
         <h3>Restaurants</h3>
+      </div>
         <article class="boxCards flexColumnBetween">
           <div class="boxCard">
             <a href="pages/la_palette_du_gout.html">
@@ -89,8 +95,8 @@
                   <p>Ménilmontant</p>
                 </div>
                 <div class="icnCards">
-                    <i class="fa-regular fa-heart heartV1"></i>
-                    <i class="fa-solid fa-heart heartV2"></i>
+                  <i class="fa-regular fa-heart heartV1"></i>
+                  <i class="fa-solid fa-heart heartV2"></i>
                 </div>
               </div>
             </a>

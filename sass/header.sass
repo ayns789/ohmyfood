@@ -1,5 +1,4 @@
-
-.header
+@mixin header-properties
     box-sizing: border-box
     width: 100%
     min-width: 350px
@@ -7,24 +6,33 @@
     display: flex
     justify-content: center
     align-items: center
-    height: 4em
+    height: 3.8em
     position: relative
+
+@mixin logo-properties
+    margin: auto 
+    padding-top: 0.4em
+    width: 10.5em
+    // position: center
+
+.header1
+    @include header-properties
     box-shadow: 0 0.2em 0.2em #D1D1D1
-    &__icnHeader0
-        width: 0em
+    &__logo
+        @include logo-properties
+.header
+    @include header-properties
+    box-shadow: 0 0.2em 0.8em #4a4848
     &__icnHeader
         width: 1.1em
         height: auto
         padding-top: 0.1em
         position: absolute
-        top:35%
-        left:6%
+        top:20px
+        left: 25px
         color: #353535
     &__logo
-        margin: auto 
-        padding-top: 0.4em
-        width: 10.5em
-        // position: center
+        @include logo-properties
 
 
 
