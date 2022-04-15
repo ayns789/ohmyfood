@@ -14,17 +14,20 @@
     <link rel="stylesheet" href="css/flexbox.css" />
     <link rel="stylesheet" href="css/loadingSpinner.css" />
     <!-- icônes  -->
+    <!-- <script src="https://kit.fontawesome.com/8730c06133.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/40409bbb33.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- <div class="loadingEffect">
-      <div class="custom-loading-spinner"></div> -->
+      <div class="custom-loading-spinner"></div>
+    </div> -->
     <header class="header1">
-      <a href="#"><img class="header__logo flexCentre" src="img/logo/ohmyfood.png" alt="logo du site" /></a>
+      <a href="#"
+        ><img class="header__logo flexCentre" src="img/logo/ohmyfood.png" alt="logo du site"
+      /></a>
     </header>
-    
+
     <main>
-      
       <section class="page1_part1 flexCentre">
         <div class="partPosition">
           <div><i class="fa-solid fa-location-dot" id="icnPosition"></i></div>
@@ -33,52 +36,55 @@
         <div class="entete">
           <h1>Réservez le menu qui vous convient</h1>
           <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-          <div class="buttonCards"><button class="button" type="button" onclick="window.location.href = 'https:';">
-            <span class="textButtonsFilters">Explorer nos restaurants</span>
-          </button></div>
+          <div class="buttonCards">
+            <button class="button" type="button" onclick="window.location.href = 'https:';">
+              <span class="textButtonsFilters">Explorer nos restaurants</span>
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="page1_part2">
         <div class="titleSection">
-        <h3>Fonctionnement</h3>
-      </div>
+          <h3>Fonctionnement</h3>
+        </div>
         <div class="box2">
-        <div class="boxButtonSearch">
-          <div class="boxButtonSearch__search">
-            <button type="button" class="boxButtonSearch__search__btnPart2">
-              <span class="icnOutBtnBox"><i class="fa-solid fa-1 icnOutBtn"></i> </span>
-              <i class="fa-solid fa-mobile-screen-button icnInBtn"></i
-              ><span class="buttonText">Choisissez un restaurant</span>
-            </button>
+          <div class="boxButtonSearch">
+            <div class="boxButtonSearch__search">
+              <button type="button" class="boxButtonSearch__search__btnPart2">
+                <span class="icnOutBtnBox"><i class="fa-solid fa-1 icnOutBtn"></i> </span>
+                <i class="fa-solid fa-mobile-screen-button icnInBtn"></i
+                ><span class="buttonText">Choisissez un restaurant</span>
+              </button>
+            </div>
+          </div>
+          <div class="boxButtonSearch">
+            <div class="boxButtonSearch__search">
+              <button type="button" class="boxButtonSearch__search__btnPart2">
+                <span class="icnOutBtnBox"><i class="fa-solid fa-2 icnOutBtn"></i> </span>
+                <span id="icnBurgerBtn"
+                  ><i class="fa-solid fa-ellipsis-vertical icnBurgerBtn1"></i
+                  ><i class="fa fa-bars icnBurgerBtn2"></i></span
+                ><span class="buttonText">Composez votre menu</span>
+              </button>
+            </div>
+          </div>
+          <div class="boxButtonSearch">
+            <div class="boxButtonSearch__search">
+              <button type="button" class="boxButtonSearch__search__btnPart2">
+                <span class="icnOutBtnBox"><i class="fa-solid fa-3 icnOutBtn"></i> </span>
+                <i class="fa-solid fa-store icnInBtn2"></i
+                ><span class="buttonText">Dégustez au restaurant</span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="boxButtonSearch">
-          <div class="boxButtonSearch__search">
-            <button type="button" class="boxButtonSearch__search__btnPart2">
-              <span class="icnOutBtnBox"><i class="fa-solid fa-2 icnOutBtn"></i> </span>
-              <span id="icnBurgerBtn"
-                ><i class="fa-solid fa-ellipsis-vertical icnBurgerBtn1"></i><i class="fa fa-bars icnBurgerBtn2"></i></span
-              ><span class="buttonText">Composez votre menu</span>
-            </button>
-          </div>
-        </div>
-        <div class="boxButtonSearch">
-          <div class="boxButtonSearch__search">
-            <button type="button" class="boxButtonSearch__search__btnPart2">
-              <span class="icnOutBtnBox"><i class="fa-solid fa-3 icnOutBtn"></i> </span>
-              <i class="fa-solid fa-store icnInBtn2"></i
-              ><span class="buttonText">Dégustez au restaurant</span>
-            </button>
-          </div>
-        </div>
-      </div>
       </section>
 
       <section class="page1_part3">
         <div class="titleSection">
-        <h3>Restaurants</h3>
-      </div>
+          <h3>Restaurants</h3>
+        </div>
         <article class="boxCards flexColumnBetween">
           <div class="boxCard">
             <a href="pages/la_palette_du_gout.html">
@@ -88,15 +94,16 @@
                   class="imgCards"
                   alt="photo d'un plat sur une table de restaurant"
                 />
-              </picture><div class="textPicture">Nouveau</div>
+              </picture>
+              <div class="textPicture">Nouveau</div>
               <div class="boxCardText flexRow">
                 <div class="textCard">
                   <h2>La palette du goût</h2>
                   <p>Ménilmontant</p>
                 </div>
                 <div class="icnCards">
-                  <i class="fa-regular fa-heart heartV1"></i>
-                  <i class="fa-solid fa-heart heartV2"></i>
+                  <i class="far fa-heart heartV1"></i>
+                  <i class="far fa-heart heartV2"></i>
                 </div>
               </div>
             </a>
@@ -110,16 +117,38 @@
                   class="imgCards"
                   alt="photo d'un plat sur une table de restaurant"
                 />
-              </picture><div class="textPicture">Nouveau</div>
+              </picture>
+              <div class="textPicture">Nouveau</div>
               <div class="boxCardText flexRow">
                 <div class="textCard">
                   <h2>La note enchantée</h2>
                   <p>Charonne</p>
                 </div>
                 <div class="icnCards">
-                  <i class="fa-regular fa-heart heartV1"></i>
-                  <i class="fa-solid fa-heart heartV2"></i>
-              </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 heartV2"
+                    fill="none"
+                    viewBox="0 0 72 72"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="72"
+                    height="72"
+                  >
+                    <linearGradient x1="0" y1="0" x2="100%" y2="100%" id="gradient">
+                      <stop class="hs" offset="0" />
+                      <stop class="h" offset="100%" />
+                    </linearGradient>
+                    <path
+                      fill="url(#gradient)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                  <!-- <i class="fa-regular fa-heart heartV1"></i>
+                  <i class="fa-solid fa-heart heartV2"></i> -->
+                </div>
               </div>
             </a>
           </div>
@@ -141,7 +170,7 @@
                 <div class="icnCards">
                   <i class="fa-regular fa-heart heartV1"></i>
                   <i class="fa-solid fa-heart heartV2"></i>
-              </div>
+                </div>
               </div>
             </a>
           </div>
@@ -163,7 +192,7 @@
                 <div class="icnCards">
                   <i class="fa-regular fa-heart heartV1"></i>
                   <i class="fa-solid fa-heart heartV2"></i>
-              </div>
+                </div>
               </div>
             </a>
           </div>
@@ -174,13 +203,18 @@
       <div class="footer__box">
         <h3>ohmyfood</h3>
         <ul>
-          <li><i class="fa-solid fa-utensils footer__box__logoFoot1"></i>&nbsp;&nbsp;&nbsp;Proposer un restaurant</li>
-          <li><i class="fa-solid fa-handshake-angle footer__box__logoFoot2"></i>&nbsp;&nbsp;&nbsp;Devenir partenaire</li>
+          <li>
+            <i class="fa-solid fa-utensils footer__box__logoFoot1"></i>&nbsp;&nbsp;&nbsp;Proposer un
+            restaurant
+          </li>
+          <li>
+            <i class="fa-solid fa-handshake-angle footer__box__logoFoot2"></i
+            >&nbsp;&nbsp;&nbsp;Devenir partenaire
+          </li>
           <li>Mentions légales</li>
           <li><a href="mailto:joly.a.idf@gmail.com">Contact</a></li>
         </ul>
       </div>
-     </footer>
-    <!-- </div> -->
+    </footer>
   </body>
 </html>

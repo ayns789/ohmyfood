@@ -1,12 +1,12 @@
-$color-primary:#9356DC
-$color-secondary:#FF79DA
-$color-tertiary:#99E2D0
-$grey:#EAEAEA
-$grey-light:#F6F6F6
+$color-primary: #9356DC
+$color-secondary: #FF79DA
+$color-tertiary: #99E2D0
+$grey: #EAEAEA
+$grey-light: #F6F6F6
 $grey-dark: #353535
 $grey-icn-btn-accueil: #7E7E7E
 $grey-border-boxShadow: #D0D0D0
-
+$purple-btn: #F5EDFF
 
 $full-width: 100%
 
@@ -16,37 +16,40 @@ $full-width: 100%
   justify-content: center
   align-items: center
 
-@font-face 
+@font-face
   font-family: 'Shrik'
   src: url('../fonts/shrikhand-regular.ttf') format('truetype')
-@font-face 
+@font-face
   font-family: 'RobotoL'
   src: url('../fonts/Roboto-Light.ttf') format('truetype')
-@font-face 
+@font-face
   font-family: 'RobotoR'
   src: url('../fonts/Roboto-Regular.ttf') format('truetype')
-@font-face 
+@font-face
   font-family: 'RobotoM'
   src: url('../fonts/Roboto-Medium.ttf') format('truetype')
-@font-face 
+@font-face
   font-family: 'RobotoB'
   src: url('../fonts/Roboto-Bold.ttf') format('truetype')
-@font-face 
+@font-face
   font-family: 'RobotoT'
   src: url('../fonts/Roboto-Thin.ttf') format('truetype')
 
-*
+body
   font-family: 'RobotoR'
+  min-width: 350px
+  max-width: 1600px
+  box-sizing: border-box
+  margin: auto
   a
     text-decoration: none
 
-  
 //************* PART 1 ****************
 .page1_part1
   background-color: $grey-light
   padding-bottom: 2.95em
   min-width: 350px
-  
+
 .partPosition
   @include -flexRowCenter
   width: $full-width
@@ -62,7 +65,7 @@ $full-width: 100%
     margin-right: 1em
 
 .entete
-  width: $full-width 
+  width: $full-width
   display: flex
   justify-content: center
   align-items: center
@@ -73,16 +76,15 @@ $full-width: 100%
     width: 70%
     text-align: center
     font-family: "RobotoM"
-  p 
+  p
     width: 99%
     padding-left: 30px
     padding-right: 30px
     margin-top: -0.2em
     text-align: center
-    font-size:1.15em
-    color:$grey-dark
+    font-size: 1.15em
+    color: $grey-dark
     font-family: 'RobotoL'
-
 
 .buttonCards
   width: $full-width
@@ -99,21 +101,18 @@ $full-width: 100%
     border: none
     box-shadow: 0 0.4em 0.4em $grey-border-boxShadow
     cursor: pointer
-    &:hover 
-      background: linear-gradient(to bottom right,  lighten($color-secondary, 5%), lighten($color-primary, 5%))
+    &:hover
+      background: linear-gradient(to bottom right, lighten($color-secondary, 5%), lighten($color-primary, 5%))
       box-shadow: 0 0.4em 0.2em $grey-border-boxShadow
       // filter: brightness(110%)
       // box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3)
       // #BE8DE6#F19DE5
       // background: linear-gradient(to bottom right, #F19DE5, #BE8DE6)
 
-  
-
-
 //************* PART 2 ****************
 .page1_part2
   margin: 2.8em 1.7em 3em 1.7em
-  min-width:21em
+  min-width: 21em
   h3
     font-size: 1.5em
     font-family: "RobotoM"
@@ -122,27 +121,26 @@ $full-width: 100%
 .boxButtonSearch
   margin: 0 0 1.5em 0
   &__search
+    position: relative
     &__btnPart2
       height: 4.8em
-      margin: 0 
-      // padding: auto
+      margin: 0
       width: $full-width
-      // min-width:21em
       background-color: $grey-light
       font-size: 1em
       border: none
       border-radius: 1.5em
       box-shadow: 0 0.2em 0.8em $grey-border-boxShadow
       cursor: pointer
-      > .icnOutBtnBox
+      .icnOutBtnBox
         background-color: $color-primary
         max-height: 20px
-        padding: 3px 10px 3px 10px
+        padding: 3px 8px 3px 8px
         border-radius: 50px
         margin-right: 5px
         position: absolute
         // top:2px
-        left:20px
+        left: -0.9em
       .icnOutBtn
         width: 0.45em
         color: white
@@ -159,7 +157,7 @@ $full-width: 100%
       .icnInBtn
         color: $grey-icn-btn-accueil
         padding: 0 1.3em 0 1.3em
-        width: 1em 
+        width: 1em
         height: auto
       .icnInBtn2
         color: $grey-icn-btn-accueil
@@ -169,16 +167,13 @@ $full-width: 100%
       .buttonText
         font-weight: bold
         padding-right: 4em
-        color: black 
+        color: black
       &:hover
-        background-color: #F5EDFF
+        background-color: $purple-btn
         box-shadow: 0 0.4em 0.7em $grey-border-boxShadow
         .icnInBtn2, .icnInBtn, .icnBurgerBtn2, .icnBurgerBtn1
-          color: $color-primary 
-
-        
-
-
+          color: $color-primary
+          // lkj
 
 //************* PART 3 ****************
 
@@ -197,7 +192,7 @@ $full-width: 100%
 
 .boxCard
   height: auto
-  margin: auto 
+  margin: auto
   width: calc(100% * (1 / 1) - 20px - 20px)
   margin-bottom: 1.2em
   position: relative
@@ -205,7 +200,7 @@ $full-width: 100%
   background-color: white
   box-shadow: 6px 6px 4px #ededed
   cursor: pointer
-  .imgCards 
+  .imgCards
     border-radius: 15px 15px 0 0
     object-fit: cover
     object-position: 30% 60%
@@ -243,64 +238,55 @@ $full-width: 100%
         font-size: 1.5em
         color: black
       .heartV2
-        font-size: 0
+        // fill: linear-gradient(to bottom, #e72c83 20%,#a742c6 100%)
         // transition: color 1000ms 
+      .h
+        stop-color: transparent
+      .hs
+        stop-color: transparent
       &:hover
+        .h
+          stop-color: $color-secondary
+        .hs
+          stop-color: $color-primary
         .heartV1
-          font-size: 0 
+          font-size: 0
         // .icnCards a .heartV2:before
         //   display: inline
         //   padding-right: 1em
         .heartV2
-          font-size: 1.5em
-          padding-right: 0.17em
-          background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%)
-          background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%)
-          background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%)
+          stroke-width: 0
+          // width: 1.5em
+          // padding-right: 0.17em
+          // background: -moz-linear-gradient(top, #e72c83 20%, #a742c6 100%)
+          // background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%)
+          // fill: linear-gradient(to bottom, #e72c83 20%,#a742c6 100%)
           // background: -moz-linear-gradient(to bottom left, $color-secondary, $color-primary)
           // background: -webkit-linear-gradient(to bottom left, $color-secondary, $color-primary)
-          // background: linear-gradient(to bottom left, $color-secondary, $color-primary)
-          -webkit-background-clip: text
-          -moz-background-clip: text
-          background-clip: text
+          // fill: linear-gradient(to bottom left, $color-secondary, $color-primary)
+          // -webkit-text-fill-color: transparent
+          // -moz-text-fill-color: transparent
+          // color: transparent
+          // -webkit-background-clip: text
+          // -moz-background-clip: text
+          // background-clip: text
           // text-fill-color: transparent
-          -webkit-text-fill-color: transparent
+          // -webkit-text-fill-color: transparent
+          // transition: all 0.2s ease-in
           // color: purple
           // webkit-text-fill-color: transparent
           // webkit-background-clip: text 
           // webkit-background: -webkit-linear-gradient($color-secondary, $color-primary)
           // color: lighten($colorTest, 10%)
-          // color: $color-primary
-          // background-clip: text 
-          // -wwebkit-background-clip: text
-          // background: linear-gradient(to bottom left, $color-secondary, $color-primary) !important
-          // text-fill-color: transparent
           // background-image: linear-gradient(to right, purple, pink)
-          
-  
-// .icnCards
-//   .fa-solid
-//     width: 0
-//   &:hover
-//     .fa-regular
-//       width:0
-//     .fa-solid
-      //  background: -webkit-gradient(linear, left top, left bottom, from(#0c8), to(#333));
-//     color: linear-gradient(to bottom left, $color-secondary, $color-primary) !important
 
-
-.page-title:after 
-    content: "" 
-    display: block
-    margin: 0 0 0 0
-    width: 2.5em
-    padding-top: 6px
-    border-bottom: 3px solid $color-tertiary
-
-
-
-
-
+.page-title:after
+  content: ""
+  display: block
+  margin: 0
+  width: 2.5em
+  padding-top: 6px
+  border-bottom: 3px solid $color-tertiary
 
 // PAGES CARDS
 main
@@ -309,21 +295,21 @@ main
     min-width: 350px
     min-height: 15.8em
     max-height: 20em
-    objectif-fit: cover
+    object-fit: cover
+    overflow: hidden
     // object-position: 0px 0px
   .imgHead2
     width: $full-width
     // clip::rect(60px auto auto 60px) 
     min-width: 350px
-    objectif-fit: cover
+    object-fit: cover
     overflow: hidden
     // max-height: 17em
     height: 17em
-    object-position: 60% 30% 
+    // object-position: 60% 30% 
     // min-height: 14em
     // position: absolute
     // margin:1em
-
 
 .mainMenus
   background-color: $grey-light
@@ -341,17 +327,17 @@ main
     padding-top: 0.9em
     > h1
       font-family: 'Shrik', sans-serif
-      font-size: 1.8em 
+      font-size: 1.8em
       padding-left: 0.2em
-      padding-right:0
-      margin-right:0
+      padding-right: 0
+      margin-right: 0
       font-weight: 500
     .logoTopCard
       width: 1.6em
       -webkit-text-stroke: 1px white
       height: auto
       position: absolute
-      right:35px
+      right: 35px
       cursor: pointer
       &:hover
         color: purple
@@ -360,11 +346,11 @@ main
     font-family: 'RobotoL'
     // border-bottom: solid 2px 
   .buttonCards
-    margin-top:1.2em
+    margin-top: 1.2em
     margin-bottom: 0.2em
     > .button
       padding: 0 3em 0.3em 3em
-      margin: auto 
+      margin: auto
       cursor: pointer
 
 .cardsMenu
@@ -372,17 +358,19 @@ main
   height: auto
   margin: auto
   margin-bottom: 1.2em
-  padding-right: 0 
+  padding-right: 0
   width: $full-width
   min-width: 20em
   position: relative
+  overflow: hidden
   border-radius: 15px 15px 15px 15px
   background-color: white
   box-shadow: 6px 6px 4px #ededed
+  animation: slideMenu 2s ease-in-out forwards
   cursor: pointer
   p
-    padding:0
-    margin:0
+    padding: 0
+    margin: 0
   .textCardM
     width: calc(100% - 70px)
     margin-right: 70px
@@ -394,11 +382,11 @@ main
       color: black
     .descriptMenu
       font-size: 15px
-      padding:  0 0 0.8em 0.65em
+      padding: 0 0 0.8em 0.65em
       color: black
       overflow: hidden
-      text-overflow: ellipsis 
-      white-space : nowrap
+      text-overflow: ellipsis
+      white-space: nowrap
   .icnCardsM
     flex-direction: column
     justify-content: flex-end
@@ -410,19 +398,50 @@ main
       margin-right: 0.2em
       color: black
       position: absolute
-      right:15px
+      right: 15px
       bottom: 0px
+      transition-duration: 600ms
+      transform: translateX(0px)
+  .menu_check
+    background-color: $color-tertiary
+    width: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    transition-duration: 600ms
+    transform: translateX(60px)
+    &_icone
+      color: #FFF
+      font-size: x-large
+      transition-duration: 600ms
+      transform: rotate(360deg)
+  // déclenchement du check et rotation de l'icone associée au survol*/
+  &:hover .menu_check
+    transform: translateX(0px)
+  &:hover .menu_check_icone
+    transform: rotate(0deg)
+  &:hover .icnCardsM
+    transform: translateX(-40px)
+  // Redimensionnement de menu plat pour rogner au déclenchement de la coche*/
+  &:hover .textCardM
+    width: 67%
+    .titleCardsM, .descriptMenu
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
 
 .box1, .box2, .box3
   padding-bottom: 0.5em
 
-
-// @media (max-width: 400px)
-//   .textCardM
-//     .titleCardsM
-//       width: 15em
-//     .descriptMenu
-//       overflow: hidden
-//       white-space : nowrap
-//       text-overflow: ellipsis 
-//       width: 18em
+// progressive charge cards menu
+@keyframes slideMenu
+  0%
+    opacity: 0
+    transform: translateY(-40px)
+  100%
+    opacity: 1
+    transform: translateY(0)

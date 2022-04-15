@@ -3,23 +3,12 @@
     padding-bottom: 3em;
   }
   .page1_part3 .boxCards {
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .page1_part3 .boxCards .boxCard {
     width: calc(50% - 20px - 20px);
     margin-bottom: 3em;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 1191px) {
-  main .imgHead {
-    min-height: 28em;
-    max-height: 30em;
-  }
-  main .mainMenus {
-    max-width: 800px !important;
-  }
-  main .mainMenus .titrePage {
-    max-width: 800px;
   }
 }
 @media all and (min-width: 1192px) {
@@ -27,7 +16,8 @@
     padding-bottom: 3em;
   }
   .page1_part3 .boxCards {
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
     max-width: 1500px;
@@ -49,17 +39,10 @@
   }
 }
 @media all and (min-width: 768px) {
-  main .imgHead {
-    min-height: 28em;
-    max-height: 30em;
+  main .imgHead, main .imgHead2 {
+    height: 100%;
+    max-height: 35em;
   }
-  main .mainMenus {
-    max-width: 800px;
-  }
-  main .mainMenus .titrePage {
-    max-width: 800px;
-  }
-
   .page1_part2 .titleSection {
     display: flex;
     flex-direction: row;
@@ -69,37 +52,73 @@
   }
   .page1_part2 .box2 {
     display: flex;
-    flex-flow: row-wrap;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
   }
   .page1_part2 .box2 .boxButtonSearch {
+    position: relative;
     margin: 2em;
   }
   .page1_part2 .box2 .boxButtonSearch .boxButtonSearch__search__btnPart2 {
-    max-width: 21em;
-    min-width: 20em;
+    max-width: 22em;
+    min-width: 18em;
   }
   .page1_part2 .box2 .boxButtonSearch .boxButtonSearch__search__btnPart2 .icnOutBtnBox {
-    position: relative;
-    padding: 3px 5px 3px 10px;
-    margin-left: -40px;
-    margin-right: 28px;
+    position: absolute;
+    padding: 3px 8px 3px 8px;
+    margin-left: 0;
+    margin-right: 5em;
   }
   .page1_part2 .box2 .boxButtonSearch .boxButtonSearch__search__btnPart2 #icnBurgerBtn {
-    margin-left: 0.8em;
+    margin-left: 1em;
     margin-right: 0.2em;
+  }
+  .page1_part2 .box2 .boxButtonSearch .boxButtonSearch__search__btnPart2 #icnBurgerBtn .icnBurgerBtn1 {
+    margin-left: 0em;
+  }
+
+  .titrePage {
+    width: calc(100% - 50px - 50px);
+  }
+
+  .boxCardsMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .boxCardsMenu .cardsMenu {
+    max-width: 35em;
   }
 
   footer {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  footer .footer__box {
+    width: 100%;
+  }
+  footer .footer__box h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  footer .footer__box {
-    position: center;
-    margin: auto;
+  footer .footer__box ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  footer .footer__box ul li {
+    margin: 1em 3em 1em 3em;
+    padding: 0;
   }
 }
 
