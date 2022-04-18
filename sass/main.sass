@@ -112,19 +112,33 @@ body
 //************* PART 2 ****************
 .page1_part2
   margin: 2.8em 1.7em 3em 1.7em
-  min-width: 21em
+  min-width: 20.5em
   h3
     font-size: 1.5em
     font-family: "RobotoM"
     margin: 0 0 1.2em -0.2em
 
+// .box2
+//   display: flex
+//   flex-direction: column
+//   justify-content: center
+//   margin: auto
+
 .boxButtonSearch
   margin: 0 0 1.5em 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  // margin: auto
   &__search
     position: relative
     &__btnPart2
       height: 4.8em
       margin: 0
+      min-width: 20em
+      max-width: 21em
+      margin-right: 15px
       width: $full-width
       background-color: $grey-light
       font-size: 1em
@@ -134,16 +148,20 @@ body
       cursor: pointer
       .icnOutBtnBox
         background-color: $color-primary
+        color: white
+        // width: 1em
         max-height: 20px
-        padding: 3px 8px 3px 8px
+        padding: 5px 8px 3px 8px
         border-radius: 50px
-        margin-right: 5px
+        // margin-right: 15px
         position: absolute
         // top:2px
+        bottom: 1.6em
         left: -0.9em
-      .icnOutBtn
-        width: 0.45em
-        color: white
+      // .icnOutBtn
+      //   width: 0em
+      //   height: auto
+        // color: white
       #icnBurgerBtn
         color: $grey-icn-btn-accueil
         padding: 0 1.2em 0 0.2em
@@ -232,26 +250,26 @@ body
       color: black
     .icnCards
       position: absolute
-      top: 10em
-      right: 0
-      .icnHeart
+      top: 12.5rem
+      right: 1.4em
+      width: 2.1em
+      .fa-heart
+        display: block
+        font-size: 26px
+        font-weight: 100
         color: black
-        // transition: all 2s ease-in-out forwards
-      .h
-        stop-color: transparent
-      .hs
-        stop-color: transparent
-      &:hover
-        .h
-          // stop-color: $color-secondary
-        .hs
-          // stop-color: $color-primary
-        .icnHeart
-          stroke-width: 0
-          background: #06978a
-          background: -moz-linear-gradient(top, #06978a 0%, #253479 100%)
-          background: -webkit-linear-gradient(top, #06978a 0%, #253479 100%)
-          background: linear-gradient(to bottom, #06978a 0%, #253479 100%)
+        &:hover
+          background: linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+          // background: -webkit-linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+          // background: -moz-linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+          background-clip: text
+          // -moz-background-clip: text
+          -webkit-background-clip: text
+          color: transparent
+          // -webkit-text-fill-color: transparent
+          // -moz-text-fill-color: transparent
+          font-weight: 900
+          transition: all 1s ease-in-out
 
 .page-title:after
   content: ""
@@ -296,7 +314,8 @@ main
   border-radius: 2.5em 2.5em 0 0
   min-width: 20em
   > .titrePage
-    // margin-top: 1.3em 
+    margin: auto
+    margin-top: 1.3em
     padding-top: 0.9em
     > h1
       font-family: 'Shrik', sans-serif
@@ -306,14 +325,26 @@ main
       margin-right: 0
       font-weight: 500
     .logoTopCard
-      width: 1.6em
-      -webkit-text-stroke: 1px white
+      display: block
+      font-size: 26px
+      font-weight: 100
+      color: black
       height: auto
-      position: absolute
+      position: relative
       right: 35px
       cursor: pointer
       &:hover
-        color: purple
+        background: linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+        // background: -webkit-linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+        // background: -moz-linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+        background-clip: text
+        // -moz-background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+        // -webkit-text-fill-color: transparent
+        // -moz-text-fill-color: transparent
+        font-weight: 900
+        transition: all 1s ease-in-out
   h3
     font-size: 1em
     font-family: 'RobotoL'
@@ -408,7 +439,6 @@ main
   // Redimensionnement de menu plat pour rogner au déclenchement de la coche*/
   &:hover .textCardM
     width: 65%
-    // transform: translateX(0px)
     .titleCardsM, .descriptMenu
       white-space: nowrap
       overflow: hidden

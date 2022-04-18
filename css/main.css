@@ -111,7 +111,7 @@ body a {
 
 .page1_part2 {
   margin: 2.8em 1.7em 3em 1.7em;
-  min-width: 21em;
+  min-width: 20.5em;
 }
 .page1_part2 h3 {
   font-size: 1.5em;
@@ -121,6 +121,10 @@ body a {
 
 .boxButtonSearch {
   margin: 0 0 1.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .boxButtonSearch__search {
   position: relative;
@@ -128,6 +132,9 @@ body a {
 .boxButtonSearch__search__btnPart2 {
   height: 4.8em;
   margin: 0;
+  min-width: 20em;
+  max-width: 21em;
+  margin-right: 15px;
   width: 100%;
   background-color: #F6F6F6;
   font-size: 1em;
@@ -138,16 +145,13 @@ body a {
 }
 .boxButtonSearch__search__btnPart2 .icnOutBtnBox {
   background-color: #9356DC;
-  max-height: 20px;
-  padding: 3px 8px 3px 8px;
-  border-radius: 50px;
-  margin-right: 5px;
-  position: absolute;
-  left: -0.9em;
-}
-.boxButtonSearch__search__btnPart2 .icnOutBtn {
-  width: 0.45em;
   color: white;
+  max-height: 20px;
+  padding: 5px 8px 3px 8px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 1.6em;
+  left: -0.9em;
 }
 .boxButtonSearch__search__btnPart2 #icnBurgerBtn {
   color: #7E7E7E;
@@ -249,24 +253,23 @@ body a {
 }
 .boxCard .boxCardText .icnCards {
   position: absolute;
-  top: 10em;
-  right: 0;
+  top: 12.5rem;
+  right: 1.4em;
+  width: 2.1em;
 }
-.boxCard .boxCardText .icnCards .icnHeart {
+.boxCard .boxCardText .icnCards .fa-heart {
+  display: block;
+  font-size: 26px;
+  font-weight: 100;
   color: black;
 }
-.boxCard .boxCardText .icnCards .h {
-  stop-color: transparent;
-}
-.boxCard .boxCardText .icnCards .hs {
-  stop-color: transparent;
-}
-.boxCard .boxCardText .icnCards:hover .icnHeart {
-  stroke-width: 0;
-  background: #06978a;
-  background: -moz-linear-gradient(top, #06978a 0%, #253479 100%);
-  background: -webkit-linear-gradient(top, #06978a 0%, #253479 100%);
-  background: linear-gradient(to bottom, #06978a 0%, #253479 100%);
+.boxCard .boxCardText .icnCards .fa-heart:hover {
+  background: linear-gradient(to top right, #FF79DA 10%, #9356DC 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  transition: all 1s ease-in-out;
 }
 
 .page-title:after {
@@ -307,6 +310,8 @@ main .imgHead2 {
   min-width: 20em;
 }
 .mainMenus > .titrePage {
+  margin: auto;
+  margin-top: 1.3em;
   padding-top: 0.9em;
 }
 .mainMenus > .titrePage > h1 {
@@ -318,15 +323,22 @@ main .imgHead2 {
   font-weight: 500;
 }
 .mainMenus > .titrePage .logoTopCard {
-  width: 1.6em;
-  -webkit-text-stroke: 1px white;
+  display: block;
+  font-size: 26px;
+  font-weight: 100;
+  color: black;
   height: auto;
-  position: absolute;
+  position: relative;
   right: 35px;
   cursor: pointer;
 }
 .mainMenus > .titrePage .logoTopCard:hover {
-  color: purple;
+  background: linear-gradient(to top right, #FF79DA 10%, #9356DC 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  transition: all 1s ease-in-out;
 }
 .mainMenus h3 {
   font-size: 1em;
