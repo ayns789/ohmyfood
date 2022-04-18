@@ -249,11 +249,10 @@ body a {
 }
 .boxCard .boxCardText .icnCards {
   position: absolute;
-  top: 12.5em;
-  right: 0.8em;
+  top: 10em;
+  right: 0;
 }
-.boxCard .boxCardText .icnCards .heartV1 {
-  font-size: 1.5em;
+.boxCard .boxCardText .icnCards .icnHeart {
   color: black;
 }
 .boxCard .boxCardText .icnCards .h {
@@ -262,17 +261,12 @@ body a {
 .boxCard .boxCardText .icnCards .hs {
   stop-color: transparent;
 }
-.boxCard .boxCardText .icnCards:hover .h {
-  stop-color: #FF79DA;
-}
-.boxCard .boxCardText .icnCards:hover .hs {
-  stop-color: #9356DC;
-}
-.boxCard .boxCardText .icnCards:hover .heartV1 {
-  font-size: 0;
-}
-.boxCard .boxCardText .icnCards:hover .heartV2 {
+.boxCard .boxCardText .icnCards:hover .icnHeart {
   stroke-width: 0;
+  background: #06978a;
+  background: -moz-linear-gradient(top, #06978a 0%, #253479 100%);
+  background: -webkit-linear-gradient(top, #06978a 0%, #253479 100%);
+  background: linear-gradient(to bottom, #06978a 0%, #253479 100%);
 }
 
 .page-title:after {
@@ -362,6 +356,8 @@ main .imgHead2 {
   background-color: white;
   box-shadow: 6px 6px 4px #ededed;
   animation: slideMenu 2s ease-in-out forwards;
+  transition-duration: 600ms;
+  transform: translateX(0px);
   cursor: pointer;
 }
 .cardsMenu p {
@@ -371,6 +367,8 @@ main .imgHead2 {
 .cardsMenu .textCardM {
   width: calc(100% - 70px);
   margin-right: 70px;
+  transition-duration: 600ms;
+  transform: translateX(0px);
 }
 .cardsMenu .textCardM > .titleCardsM {
   font-size: 1.15em;
@@ -390,12 +388,10 @@ main .imgHead2 {
 .cardsMenu .icnCardsM {
   flex-direction: column;
   justify-content: flex-end;
-  margin-right: 15px;
 }
 .cardsMenu .icnCardsM > .cardsMenuTarifs {
   font-family: "RobotoM";
   padding-bottom: 0.75em;
-  margin-right: 0.2em;
   color: black;
   position: absolute;
   right: 15px;
@@ -428,16 +424,16 @@ main .imgHead2 {
 .cardsMenu:hover .menu_check_icone {
   transform: rotate(0deg);
 }
-.cardsMenu:hover .icnCardsM {
-  transform: translateX(-40px);
-}
 .cardsMenu:hover .textCardM {
-  width: 67%;
+  width: 65%;
 }
 .cardsMenu:hover .textCardM .titleCardsM, .cardsMenu:hover .textCardM .descriptMenu {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.cardsMenu:hover .cardsMenuTarifs {
+  transform: translateX(-60px);
 }
 
 .box1, .box2, .box3 {

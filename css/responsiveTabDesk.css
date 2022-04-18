@@ -93,7 +93,13 @@
     margin-right: 3em;
   }
   .boxCardsMenu .cardsMenu {
-    max-width: 35em;
+    min-width: 20em;
+    max-width: 20em;
+  }
+  .boxCardsMenu .cardsMenu .titleCardsM {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   footer {

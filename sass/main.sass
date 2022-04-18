@@ -232,53 +232,26 @@ body
       color: black
     .icnCards
       position: absolute
-      top: 12.5em
-      right: 0.8em
-      .heartV1
-        font-size: 1.5em
+      top: 10em
+      right: 0
+      .icnHeart
         color: black
-      .heartV2
-        // fill: linear-gradient(to bottom, #e72c83 20%,#a742c6 100%)
-        // transition: color 1000ms 
+        // transition: all 2s ease-in-out forwards
       .h
         stop-color: transparent
       .hs
         stop-color: transparent
       &:hover
         .h
-          stop-color: $color-secondary
+          // stop-color: $color-secondary
         .hs
-          stop-color: $color-primary
-        .heartV1
-          font-size: 0
-        // .icnCards a .heartV2:before
-        //   display: inline
-        //   padding-right: 1em
-        .heartV2
+          // stop-color: $color-primary
+        .icnHeart
           stroke-width: 0
-          // width: 1.5em
-          // padding-right: 0.17em
-          // background: -moz-linear-gradient(top, #e72c83 20%, #a742c6 100%)
-          // background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%)
-          // fill: linear-gradient(to bottom, #e72c83 20%,#a742c6 100%)
-          // background: -moz-linear-gradient(to bottom left, $color-secondary, $color-primary)
-          // background: -webkit-linear-gradient(to bottom left, $color-secondary, $color-primary)
-          // fill: linear-gradient(to bottom left, $color-secondary, $color-primary)
-          // -webkit-text-fill-color: transparent
-          // -moz-text-fill-color: transparent
-          // color: transparent
-          // -webkit-background-clip: text
-          // -moz-background-clip: text
-          // background-clip: text
-          // text-fill-color: transparent
-          // -webkit-text-fill-color: transparent
-          // transition: all 0.2s ease-in
-          // color: purple
-          // webkit-text-fill-color: transparent
-          // webkit-background-clip: text 
-          // webkit-background: -webkit-linear-gradient($color-secondary, $color-primary)
-          // color: lighten($colorTest, 10%)
-          // background-image: linear-gradient(to right, purple, pink)
+          background: #06978a
+          background: -moz-linear-gradient(top, #06978a 0%, #253479 100%)
+          background: -webkit-linear-gradient(top, #06978a 0%, #253479 100%)
+          background: linear-gradient(to bottom, #06978a 0%, #253479 100%)
 
 .page-title:after
   content: ""
@@ -367,6 +340,8 @@ main
   background-color: white
   box-shadow: 6px 6px 4px #ededed
   animation: slideMenu 2s ease-in-out forwards
+  transition-duration: 600ms
+  transform: translateX(0px)
   cursor: pointer
   p
     padding: 0
@@ -374,6 +349,8 @@ main
   .textCardM
     width: calc(100% - 70px)
     margin-right: 70px
+    transition-duration: 600ms
+    transform: translateX(0px)
     > .titleCardsM
       font-size: 1.15em
       font-family: "RobotoR"
@@ -391,14 +368,16 @@ main
     flex-direction: column
     justify-content: flex-end
     // flex-basis: 8%
-    margin-right: 15px
+    // margin-right: 15px
     > .cardsMenuTarifs
       font-family: "RobotoM"
       padding-bottom: 0.75em
-      margin-right: 0.2em
+      // margin-right: 0.2em
       color: black
       position: absolute
       right: 15px
+      // display: flex
+      // align-items: flex-end
       bottom: 0px
       transition-duration: 600ms
       transform: translateX(0px)
@@ -422,17 +401,21 @@ main
   // déclenchement du check et rotation de l'icone associée au survol*/
   &:hover .menu_check
     transform: translateX(0px)
+    // margin-left: 0
   &:hover .menu_check_icone
     transform: rotate(0deg)
-  &:hover .icnCardsM
-    transform: translateX(-40px)
+
   // Redimensionnement de menu plat pour rogner au déclenchement de la coche*/
   &:hover .textCardM
-    width: 67%
+    width: 65%
+    // transform: translateX(0px)
     .titleCardsM, .descriptMenu
       white-space: nowrap
       overflow: hidden
       text-overflow: ellipsis
+  &:hover .cardsMenuTarifs
+    // right: 0
+    transform: translateX(-60px)
 
 .box1, .box2, .box3
   padding-bottom: 0.5em
