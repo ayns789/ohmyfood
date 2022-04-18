@@ -104,10 +104,6 @@ body
     &:hover
       background: linear-gradient(to bottom right, lighten($color-secondary, 5%), lighten($color-primary, 5%))
       box-shadow: 0 0.4em 0.2em $grey-border-boxShadow
-      // filter: brightness(110%)
-      // box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3)
-      // #BE8DE6#F19DE5
-      // background: linear-gradient(to bottom right, #F19DE5, #BE8DE6)
 
 //************* PART 2 ****************
 .page1_part2
@@ -118,26 +114,14 @@ body
     font-family: "RobotoM"
     margin: 0 0 1.2em -0.2em
 
-// .box2
-//   display: flex
-//   flex-direction: column
-//   justify-content: center
-//   margin: auto
-
 .boxButtonSearch
   margin: 0 0 1.5em 0
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  // margin: auto
   &__search
     position: relative
     &__btnPart2
       height: 4.8em
       margin: 0
       min-width: 20em
-      max-width: 21em
       margin-right: 15px
       width: $full-width
       background-color: $grey-light
@@ -149,19 +133,12 @@ body
       .icnOutBtnBox
         background-color: $color-primary
         color: white
-        // width: 1em
         max-height: 20px
         padding: 5px 8px 3px 8px
         border-radius: 50px
-        // margin-right: 15px
         position: absolute
-        // top:2px
         bottom: 1.6em
         left: -0.9em
-      // .icnOutBtn
-      //   width: 0em
-      //   height: auto
-        // color: white
       #icnBurgerBtn
         color: $grey-icn-btn-accueil
         padding: 0 1.2em 0 0.2em
@@ -234,7 +211,6 @@ body
     background-color: $color-tertiary
     top: 1em
     right: 1em
-    // transform: translate(-50%, -50%)
   .boxCardText
     height: 4.7em
     width: $full-width
@@ -288,19 +264,12 @@ main
     max-height: 20em
     object-fit: cover
     overflow: hidden
-    // object-position: 0px 0px
   .imgHead2
     width: $full-width
-    // clip::rect(60px auto auto 60px) 
     min-width: 350px
     object-fit: cover
     overflow: hidden
-    // max-height: 17em
     height: 17em
-    // object-position: 60% 30% 
-    // min-height: 14em
-    // position: absolute
-    // margin:1em
 
 .mainMenus
   background-color: $grey-light
@@ -348,7 +317,6 @@ main
   h3
     font-size: 1em
     font-family: 'RobotoL'
-    // border-bottom: solid 2px 
   .buttonCards
     margin-top: 1.2em
     margin-bottom: 0.2em
@@ -398,17 +366,12 @@ main
   .icnCardsM
     flex-direction: column
     justify-content: flex-end
-    // flex-basis: 8%
-    // margin-right: 15px
     > .cardsMenuTarifs
       font-family: "RobotoM"
       padding-bottom: 0.75em
-      // margin-right: 0.2em
       color: black
       position: absolute
       right: 15px
-      // display: flex
-      // align-items: flex-end
       bottom: 0px
       transition-duration: 600ms
       transform: translateX(0px)
@@ -444,7 +407,6 @@ main
       overflow: hidden
       text-overflow: ellipsis
   &:hover .cardsMenuTarifs
-    // right: 0
     transform: translateX(-60px)
 
 .box1, .box2, .box3
