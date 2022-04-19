@@ -142,11 +142,15 @@ body a {
   background-color: #9356DC;
   color: white;
   max-height: 20px;
-  padding: 5px 8px 3px 8px;
+  padding: 4px 8px 0px 8px;
   border-radius: 50px;
   position: absolute;
   bottom: 1.6em;
   left: -0.9em;
+}
+.boxButtonSearch__search__btnPart2 .icnOutBtnBox > .icnNumber {
+  font-size: 0.9em;
+  margin-top: 0;
 }
 .boxButtonSearch__search__btnPart2 #icnBurgerBtn {
   color: #7E7E7E;
@@ -155,7 +159,7 @@ body a {
 .boxButtonSearch__search__btnPart2 #icnBurgerBtn .icnBurgerBtn1 {
   width: 0.3em;
   height: auto;
-  padding-right: 0.08em;
+  padding-right: 0.05em;
 }
 .boxButtonSearch__search__btnPart2 #icnBurgerBtn .icnBurgerBtn2 {
   width: 1.07em;
