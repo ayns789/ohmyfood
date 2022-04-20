@@ -353,8 +353,8 @@ body a {
 
 @media all and (min-width: 768px) {
   main .imgHead, main .imgHead2 {
-    min-height: 35em;
-    max-height: 35em !important;
+    min-height: 32em;
+    max-height: 32em !important;
   }
   main .mainMenus .titrePage h1 {
     font-size: 2.5em;
