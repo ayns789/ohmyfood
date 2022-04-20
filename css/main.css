@@ -433,11 +433,7 @@ body a {
     margin-left: 3em;
     margin-right: 3em;
   }
-  .boxCardsMenu .cardsMenu {
-    min-width: 20em;
-    max-width: 20em;
-  }
-  .boxCardsMenu .cardsMenu .titleCardsM {
+  .boxCardsMenu .titleCardsM {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -485,10 +481,37 @@ body a {
   }
 }
 
-@media all and (min-width: 800px) and (max-width: 1085px) {
+@media all and (min-width: 768px) and (max-width: 849px) {
   .cardsMenu {
-    min-width: 20em;
-    width: 100%;
+    min-width: 18em;
+    max-width: 18em;
+  }
+}
+
+@media all and (min-width: 850px) and (max-width: 999px) {
+  .cardsMenu {
+    min-width: 22em !important;
+    max-width: 22em;
+  }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1199px) {
+  .cardsMenu {
+    min-width: 27em !important;
+    max-width: 27em;
+  }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1399px) {
+  .cardsMenu {
+    min-width: 22em !important;
+    max-width: 22em;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .cardsMenu {
+    min-width: 25em !important;
     max-width: 25em;
   }
 }
