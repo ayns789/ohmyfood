@@ -1,0 +1,65 @@
+.page1_part2
+  margin: 2.8em 1.7em 3em 1.7em
+  min-width: 20.5em
+  h3
+    font-size: 1.5em
+    font-family: "RobotoM"
+    margin: 0 0 1.2em -0.2em
+
+.boxButtonSearch
+  margin: 0 0 1.5em 0
+  &__search
+    position: relative
+    &__btnPart2
+      height: 4.8em
+      margin: 0
+      min-width: 20em
+      margin-right: 15px
+      width: $full-width
+      background-color: $grey-light
+      font-size: 1em
+      border: none
+      border-radius: 1.5em
+      box-shadow: 0 0.2em 0.8em $grey-border-boxShadow
+      cursor: pointer
+      .icnOutBtnBox
+        background-color: $color-primary
+        color: white
+        max-height: 20px
+        padding: 4px 8px 0px 8px
+        border-radius: 50px
+        position: absolute
+        bottom: 1.6em
+        left: -0.9em
+        > .icnNumber
+          font-size: 0.9em
+          margin-top: 0
+      #icnBurgerBtn
+        color: $grey-icn-btn-accueil
+        padding: 0 1.2em 0 0.2em
+        .icnBurgerBtn1
+          width: 0.3em
+          height: auto
+          padding-right: 0.05em
+        .icnBurgerBtn2
+          width: 1.07em
+          height: auto
+      .icnInBtn
+        color: $grey-icn-btn-accueil
+        padding: 0 1.3em 0 1.3em
+        width: 1em
+        height: auto
+      .icnInBtn2
+        color: $grey-icn-btn-accueil
+        padding: 0 1.3em 0 1.3em
+        width: 1.4em
+        height: auto
+      .buttonText
+        font-weight: bold
+        padding-right: 4em
+        color: black
+      &:hover
+        background-color: $purple-btn
+        box-shadow: 0 0.4em 0.7em $grey-border-boxShadow
+        .icnInBtn2, .icnInBtn, .icnBurgerBtn2, .icnBurgerBtn1
+          color: $color-primary

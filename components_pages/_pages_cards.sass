@@ -1,0 +1,162 @@
+.page-title:after
+  content: ""
+  display: block
+  margin: 0
+  width: 2.5em
+  padding-top: 6px
+  border-bottom: 3px solid $color-tertiary
+
+main
+  .imgHead
+    width: $full-width
+    min-width: 350px
+    min-height: 15.8em
+    max-height: 20em
+    object-fit: cover
+    overflow: hidden
+  .imgHead2
+    width: $full-width
+    min-width: 350px
+    object-fit: cover
+    overflow: hidden
+    height: 17em
+
+.mainMenus
+  background-color: $grey-light
+  position: relative
+  right: 0%
+  left: 0%
+  top: 33%
+  margin-top: -3.6em
+  padding: 0 1em 0 1em
+  padding-bottom: 3em
+  border-radius: 2.5em 2.5em 0 0
+  min-width: 20em
+  > .titrePage
+    margin: auto
+    margin-top: 1.3em
+    padding-top: 0.9em
+    > h1
+      font-family: 'Shrik', sans-serif
+      font-size: 1.8em
+      padding-left: 0.2em
+      padding-right: 0
+      margin-right: 0
+      font-weight: 500
+    .logoTopCard
+      display: block
+      font-size: 26px
+      font-weight: 100
+      color: black
+      height: auto
+      position: relative
+      right: 35px
+      cursor: pointer
+      &:hover
+        background: linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+        // background: -webkit-linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+        // background: -moz-linear-gradient(to top right,$color-secondary 10%, $color-primary 70%)
+        background-clip: text
+        // -moz-background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+        // -webkit-text-fill-color: transparent
+        // -moz-text-fill-color: transparent
+        font-weight: 900
+        transition: all 1s ease-in-out
+  h3
+    font-size: 1em
+    font-family: 'RobotoL'
+  .buttonCards
+    margin-top: 1.2em
+    margin-bottom: 0.2em
+    > .button
+      padding: 0 3em 0.3em 3em
+      margin: auto
+      cursor: pointer
+
+.cardsMenu
+  justify-content: space-between
+  height: auto
+  margin: auto
+  margin-bottom: 1.2em
+  padding-right: 0
+  width: $full-width
+  min-width: 20em
+  position: relative
+  overflow: hidden
+  border-radius: 15px 15px 15px 15px
+  background-color: white
+  box-shadow: 6px 6px 4px #ededed
+  animation: slideMenu 2s ease-in-out forwards
+  transition-duration: 600ms
+  transform: translateX(0px)
+  cursor: pointer
+  p
+    padding: 0
+    margin: 0
+  .textCardM
+    width: calc(100% - 70px)
+    margin-right: 70px
+    transition-duration: 600ms
+    transform: translateX(0px)
+    > .titleCardsM
+      font-size: 1.15em
+      font-family: "RobotoR"
+      margin: 0
+      padding: 0.5em 0 0.15em 0.65em
+      color: black
+    .descriptMenu
+      font-size: 15px
+      padding: 0 0 0.8em 0.65em
+      color: black
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+  .icnCardsM
+    flex-direction: column
+    justify-content: flex-end
+    > .cardsMenuTarifs
+      font-family: "RobotoM"
+      padding-bottom: 0.75em
+      color: black
+      position: absolute
+      right: 15px
+      bottom: 0px
+      transition-duration: 600ms
+      transform: translateX(0px)
+  .menu_check
+    background-color: $color-tertiary
+    width: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    transition-duration: 600ms
+    transform: translateX(60px)
+    &_icone
+      color: #FFF
+      font-size: x-large
+      transition-duration: 600ms
+      transform: rotate(360deg)
+  // déclenchement du check et rotation de l'icone associée au survol*/
+  &:hover .menu_check
+    transform: translateX(0px)
+  &:hover .menu_check_icone
+    transform: rotate(0deg)
+
+  // Redimensionnement de menu plat pour rogner au déclenchement de la coche*/
+  &:hover .textCardM
+    width: 65%
+    .titleCardsM, .descriptMenu
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+  &:hover .cardsMenuTarifs
+    transform: translateX(-60px)
+
+.box1, .box2, .box3
+  padding-bottom: 0.5em
