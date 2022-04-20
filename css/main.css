@@ -733,7 +733,7 @@ sub {
 }
 
 .footer__box h3 {
-  font-family: 'Shrik', sans-serif;
+  font-family: 'Shrik', sans-serif !important;
   font-weight: 100;
   font-size: 1.15em;
   color: white;
@@ -1115,7 +1115,7 @@ main .imgHead2 {
 }
 
 .mainMenus > .titrePage > h1 {
-  font-family: 'Shrik', sans-serif;
+  font-family: 'Shrik', sans-serif !important;
   font-size: 1.8em;
   padding-left: 0.2em;
   padding-right: 0;
