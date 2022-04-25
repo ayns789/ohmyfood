@@ -572,6 +572,71 @@ sub {
   height: auto;
 }
 
+.menu1 {
+  animation: slideMenu 1000ms ease-out forwards;
+}
+
+.menu2 {
+  animation: slideMenu2 1150ms ease-out forwards;
+}
+
+.menu3 {
+  animation: slideMenu3 1300ms ease-out forwards;
+}
+
+.menu3-1 {
+  animation: slideMenu31 1450ms ease-out forwards;
+}
+
+.menu4 {
+  animation: slideMenu 1000ms ease-out forwards;
+}
+
+.menu5 {
+  animation: slideMenu2 1150ms ease-out forwards;
+}
+
+.menu6 {
+  animation: slideMenu3 1300ms ease-out forwards;
+}
+
+.menu7 {
+  animation: slideMenu 1000ms ease-out forwards;
+}
+
+.menu8 {
+  animation: slideMenu2 1150ms ease-out forwards;
+}
+
+.menu9 {
+  animation: slideMenu3 1300ms ease-out forwards;
+}
+
+.buttonCards {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0 0.5em 0;
+}
+.buttonCards .button {
+  height: 3.1em;
+  font-size: 1.05em;
+  padding: 0 1.3em 0.3em 1.3em;
+  color: white;
+  border-radius: 40px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: none;
+  box-shadow: 0 0.4em 0.4em #D0D0D0;
+  cursor: pointer;
+}
+.buttonCards .button:hover {
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: 0 0.4em 0.2em #D0D0D0;
+}
+
 .page1_part1 {
   background-color: #F6F6F6;
   padding-bottom: 2.95em;
@@ -656,7 +721,7 @@ sub {
   background-color: #9356DC;
   color: white;
   max-height: 20px;
-  padding: 4px 8px 0px 8px;
+  padding: 3px 8px 3px 8px;
   border-radius: 50px;
   position: absolute;
   bottom: 1.6em;
@@ -783,71 +848,6 @@ sub {
   color: transparent;
   font-weight: 900;
   transition: all 1s ease-in-out;
-}
-
-.menu1 {
-  animation: slideMenu 1000ms ease-out forwards;
-}
-
-.menu2 {
-  animation: slideMenu2 1150ms ease-out forwards;
-}
-
-.menu3 {
-  animation: slideMenu3 1300ms ease-out forwards;
-}
-
-.menu3-1 {
-  animation: slideMenu31 1450ms ease-out forwards;
-}
-
-.menu4 {
-  animation: slideMenu 1000ms ease-out forwards;
-}
-
-.menu5 {
-  animation: slideMenu2 1150ms ease-out forwards;
-}
-
-.menu6 {
-  animation: slideMenu3 1300ms ease-out forwards;
-}
-
-.menu7 {
-  animation: slideMenu 1000ms ease-out forwards;
-}
-
-.menu8 {
-  animation: slideMenu2 1150ms ease-out forwards;
-}
-
-.menu9 {
-  animation: slideMenu3 1300ms ease-out forwards;
-}
-
-.buttonCards {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5em 0 0.5em 0;
-}
-.buttonCards .button {
-  height: 3.1em;
-  font-size: 1.05em;
-  padding: 0 1.3em 0.3em 1.3em;
-  color: white;
-  border-radius: 40px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  border: none;
-  box-shadow: 0 0.4em 0.4em #D0D0D0;
-  cursor: pointer;
-}
-.buttonCards .button:hover {
-  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
-  box-shadow: 0 0.4em 0.2em #D0D0D0;
 }
 
 .page-title:after {
