@@ -35,53 +35,10 @@ body a {
 }
 
 @keyframes slideMenu {
-  0% {
-    opacity: 0;
-  }
-  3% {
-    opacity: 0;
+  from {
     transform: translateY(20px);
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes slideMenu2 {
-  0% {
-    opacity: 0;
-  }
-  18% {
-    opacity: 0;
-    transform: translateY(19px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes slideMenu3 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes slideMenu31 {
-  0% {
-    opacity: 0;
-  }
-  42% {
-    opacity: 0;
-    transform: translateY(17px);
-  }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -572,44 +529,25 @@ sub {
   height: auto;
 }
 
-.menu1 {
+.cardsMenu {
+  opacity: 0;
   animation: slideMenu 1000ms ease-out forwards;
 }
 
-.menu2 {
-  animation: slideMenu2 1150ms ease-out forwards;
+.cardsMenu:nth-child(1) {
+  animation-delay: 500ms;
 }
 
-.menu3 {
-  animation: slideMenu3 1300ms ease-out forwards;
+.cardsMenu:nth-child(2) {
+  animation-delay: 700ms;
 }
 
-.menu3-1 {
-  animation: slideMenu31 1450ms ease-out forwards;
+.cardsMenu:nth-child(3) {
+  animation-delay: 900ms;
 }
 
-.menu4 {
-  animation: slideMenu 1000ms ease-out forwards;
-}
-
-.menu5 {
-  animation: slideMenu2 1150ms ease-out forwards;
-}
-
-.menu6 {
-  animation: slideMenu3 1300ms ease-out forwards;
-}
-
-.menu7 {
-  animation: slideMenu 1000ms ease-out forwards;
-}
-
-.menu8 {
-  animation: slideMenu2 1150ms ease-out forwards;
-}
-
-.menu9 {
-  animation: slideMenu3 1300ms ease-out forwards;
+.cardsMenu:nth-child(4) {
+  animation-delay: 1100ms;
 }
 
 .buttonCards {
@@ -930,6 +868,13 @@ main .imgHead2 {
   padding: 0 3em 0.3em 3em;
   margin: auto;
   cursor: pointer;
+}
+
+.boxCardsMenu {
+  padding-left: 0;
+}
+.boxCardsMenu ul li {
+  list-style: none;
 }
 
 .cardsMenu {
