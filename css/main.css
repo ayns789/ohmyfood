@@ -188,7 +188,7 @@ body a {
     margin-bottom: 3em;
   }
 }
-@media all and (min-width: 1500px) {
+@media all and (min-width: 768px) {
   .page1_part3 .titleSection {
     display: flex;
     flex-direction: row;
@@ -196,6 +196,7 @@ body a {
     padding-bottom: 2em;
     margin: auto;
     margin-top: 0;
+    margin-bottom: 1em;
     max-width: 1480px;
   }
 }
