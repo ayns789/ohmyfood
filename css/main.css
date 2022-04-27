@@ -271,6 +271,7 @@ body a {
     padding: 0;
   }
   footer .footer__box {
+    padding: 2em 0.5em 3em 0.5em;
     width: 100%;
   }
   footer .footer__box h3 {
@@ -278,6 +279,7 @@ body a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0.8em;
   }
   footer .footer__box ul {
     width: 100%;
@@ -286,7 +288,7 @@ body a {
     justify-content: space-around;
   }
   footer .footer__box ul li {
-    margin: 1em 3em 1em 3em;
+    margin: auto;
     padding: 0;
   }
 }
