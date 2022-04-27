@@ -486,11 +486,10 @@ sub {
   box-shadow: 0 0.2em 0.8em #4a4848;
 }
 .header__icnHeader {
-  font-size: 18px;
+  width: 1.1em;
   height: auto;
   padding-top: 0.1em;
   position: absolute;
-  font-weight: 900;
   top: 20px;
   left: 25px;
   color: #353535;
@@ -919,6 +918,9 @@ main .imgHead2 {
   margin: 0;
   padding: 0.5em 0 0.15em 0.65em;
   color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cardsMenu .textCardM .descriptMenu {
   font-size: 15px;
